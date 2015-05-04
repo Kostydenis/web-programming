@@ -1,0 +1,152 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.05.2015, 17:38:11
+    Author     : kostydenis
+*/
+
+@import "../_bourbon/bourbon.scss";
+@import "fonts.scss";
+
+$main_bg: #EEEEEE;
+$paper_bg: #FAFAFA;
+$face_icons: #636363;
+$face_text: #000000;
+$app_bar_line_height: 20px;
+$preview_color: #3E50B4;
+
+@mixin shadow {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.nomargin {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $main_bg;
+    font-family: "Roboto";
+
+}
+
+.hero {
+    background-image: url(../_pics/hero.jpg);
+    @include position(absolute, 0 null null 0);
+    width: 100%;
+    height: 371px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.darken {
+    display: none;    
+    @include position(absolute, 0 null null 0);
+    height: 100%;
+    width: 100%;
+    @include radial-gradient(circle at 27% 50%, rgba(0,0,0,0.20) 28%, rgba(0,0,0,0.40) 100%);
+
+}
+.menu {
+    @include position(absolute, 0 null null 0);
+    height: 100%;
+    width: 27%;
+    background-color: $paper_bg;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.14);
+}
+
+.content {
+    background: #FAFAFA;
+    border: 1px solid #979797;
+    @include shadow;
+    position: relative;
+    z-index: 100;
+    margin: 200px auto 80px;
+    width: 940px;
+
+    h1 {
+
+    }
+    h2 {
+
+    }
+
+    .lec_card {
+        background-color: green;
+        float: left;
+        width: 250px;
+        /*        height: 216px;*/
+        padding: 0 !important;
+        border: 1px black solid;
+        @include shadow;
+        margin: 0 30.6px 40px;
+
+        .preview {
+            @extend .nomargin;
+            width: 100%;
+            height: 168px;
+            background-color: $preview_color;
+
+            p {
+                @extend .nomargin; 
+            }   
+        }
+        .control {
+            @extend .nomargin;
+            width: 100%;
+            height: 48px;
+            background-color: $paper_bg;
+            ul {
+                list-style: none;
+                @extend .nomargin;
+                li {
+                    @extend .nomargin;
+                    margin: 9px;
+                    height: 30px;
+                    width: 25px;
+                    display: inline-block;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .read {
+                    background-image: url(../_pics/_icons/read.png);
+                }
+                .download {
+                    background-image: url(../_pics/_icons/download.png);
+                }
+                .share {
+                    background-image: url(../_pics/_icons/share.png);
+                }
+            }
+        }    
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+    p {
+        color: #696969;
+        margin: 0 1px;
+    }
+}
