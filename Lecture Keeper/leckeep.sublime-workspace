@@ -55,17 +55,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "<!DOCTYPE html>\n<!--\nTo change this license header, choose License Headers in Project Properties.\nTo change this template file, choose Tools | Templates\nand open the template in the editor.\n-->\n<html>\n    <head>\n        <title>Lecture Keeper</title>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"_css/main.css\">\n    </head>\n\n\n    <body>\n        <div class=\"hero\"></div>\n        <div class=\"app_bar\">\n\n            <ul class=\"pull-left\">\n                <li class=\"glyphicon glyphicon-menu-hamburger\"></li>\n                <li><a href=\"\">Home</a></li>\n            </ul>\n            <ul class=\"pull-right\">\n                <li><img src=\"_pics/_icons/top.png\" class=\"pull-right\"></li>\n                <li><a href=\"\">About</a></li>\n            </ul>\n        </div>\n\n        <div class=\"darken hide\" onclick=\"hide_menu()\">\n            <div class=\"menu\">\n                <h1>Lecture Keeper</h1>\n                <div class=\"divider\"></div>\n                <ul>\n                    <li></li>\n                </ul>\n            </div>\n        </div>\n\n        <div class=\"content\">\n            <h1>Lecture Keeper</h1>\n            <div class=\"divider\"></div>\n            <h2>Лекции и другие материалы АСУб-12-1</h2>\n\n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div class=\"lec_card\" id=\"1\">\n                <div class=\"preview\">\n                    <p>Favorite Road Trips</p>\n                </div>\n                <div class=\"control\">\n                    <ul><li class=\"read\"></li><li class=\"download\"></li><li class=\"share\"></li></ul>\n                </div>\n            </div>\n            \n            <div style=\"clear:both;\"></div>\n    \n        </div>\n        \n        <footer>\n            <p>Denis Kostylev, 2015</p>\n            <p>icons by <a href=\"icon8.com\">icon8</a></p>\n            <p>best view in google chrome</p>\n        </footer>\n\n    </body>\n</html>\n",
-			"file": "public_html/index.html",
-			"file_size": 3684,
-			"file_write_time": 130749700730000000,
-			"settings":
-			{
-				"buffer_size": 3658,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -199,6 +188,8 @@
 	],
 	"file_history":
 	[
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/index.html",
+		"/Users/kostydenis/Documents/edu_local/style.css",
 		"/Users/kostydenis/Downloads/bootstrap/css/bootstrap.css",
 		"/Users/kostydenis/Downloads/bootstrap-3.3.4-dist/css/bootstrap.css",
 		"/Users/kostydenis/Downloads/bootstrap-3.3.4-dist/js/bootstrap.js",
@@ -214,7 +205,6 @@
 		"/Users/kostydenis/Library/Application Support/Mou/CSS/MyStyle.css",
 		"/Users/kostydenis/Documents/edu_local/electronic engeneering/style.css",
 		"/Users/kostydenis/Documents/edu_local/ICS design/style.css",
-		"/Users/kostydenis/Documents/edu_local/style.css",
 		"/Users/kostydenis/Documents/edu_local/ICS design/icsdesign.html",
 		"/Users/kostydenis/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/Users/kostydenis/Downloads/The Flash 2014  - 1x18 - Season 1  Episode 18.HDTV.HI.en.srt",
@@ -258,39 +248,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "public_html/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1140,
-								1140
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -334,7 +293,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "leckeep.sublime-project",
+	"project": "/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/leckeep.sublime-project",
 	"replace":
 	{
 		"height": 42.0

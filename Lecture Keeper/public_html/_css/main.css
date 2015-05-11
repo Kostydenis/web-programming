@@ -4,15 +4,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 01.05.2015, 17:38:11
-    Author     : kostydenis
-*/
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
     Created on : 01.05.2015, 19:54:51
     Author     : kostydenis
 */
@@ -3431,9 +3422,15 @@ and open the template in the editor.
   content: "\f23a";
 }
 
-.nomargin, .content .lec_card .preview, .content .lec_card .preview p, .content .lec_card .control, .content .lec_card .control ul, .content .lec_card .control ul li {
+.nomargin, .app_bar, .app_bar ul, .content .lec_card_grid .preview, .content .lec_card_grid p, .content .lec_card_grid .control, .content .lec_card_grid .control ul, .content .lec_card_grid .control ul li, .content .lec_card_list .preview, .content .lec_card_list p, .content .lec_card_list .control ul {
   margin: 0px;
   padding: 0px;
+}
+
+.clearfix:after, .app_bar:after, .content:after, .content .switch_view:after, .content .lec_card_list .preview:after, .content .lec_card_list .control:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 body {
@@ -3458,28 +3455,78 @@ body {
   top: 0;
   left: 0;
   z-index: 49;
-  height: 100%;
   width: 100%;
   background-image: -webkit-radial-gradient(27% 50%, circle, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.6) 100%);
   background-image: radial-gradient(  circle at 27% 50%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.6) 100%);
 }
-.darken .menu {
+
+.darken_hide {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.3s ease, height 0s ease 0.3s;
+}
+
+.darken_show {
+  opacity: 1;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.menu {
   box-shadow: 5px 0px 15px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
-  left: 0;
   height: 100%;
   width: 27%;
+  min-width: 100px;
   background-color: #FAFAFA;
   z-index: 50;
 }
 
-.hide {
-  display: none;
+.menu_hide {
+  left: -29%;
+  transition: left 0.3s ease;
 }
 
-.show {
-  display: block;
+.menu_show {
+  left: 0px;
+  transition: left 0.3s ease;
+}
+
+.app_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 40px;
+  background-color: #FAFAFA;
+  z-index: 48;
+}
+.app_bar .pull-left {
+  float: left;
+  margin-left: 25px;
+}
+.app_bar .pull-right {
+  float: right;
+  margin-right: 25px;
+}
+.app_bar ul {
+  list-style: none;
+}
+.app_bar ul li {
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  line-height: 40px;
+  color: #000000;
+}
+.app_bar ul li img {
+  height: 20px;
+  vertical-align: middle;
+}
+.app_bar ul li a {
+  color: #000000;
 }
 
 .divider {
@@ -3494,11 +3541,40 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
-  margin: 200px auto 80px;
+  margin: 200px auto 90px;
   width: 940px;
 }
-.content .lec_card {
-  background-color: green;
+.content h1, .content h2 {
+  margin-left: 10px;
+}
+.content .switch_view {
+  margin-top: -52px;
+  margin-bottom: 25px;
+}
+.content .switch_view .grid, .content .switch_view .list {
+  float: right;
+  width: 40px;
+  height: 26px;
+  color: #636363;
+  background-color: #D8D8D8;
+}
+.content .switch_view .grid span, .content .switch_view .list span {
+  line-height: 26px;
+  margin: 0 12px;
+}
+.content .switch_view .grid {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.content .switch_view .list {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-right: 32px;
+}
+.content .switch_view .not_pressed {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.content .lec_card_grid {
   float: left;
   width: 250px;
   /*        height: 216px;*/
@@ -3506,31 +3582,37 @@ body {
   border: 1px #979797 solid;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
   margin: 0 30.6px 40px;
+  border-radius: 4px;
 }
-.content .lec_card .preview {
+.content .lec_card_grid .preview {
   width: 100%;
   height: 168px;
   background-color: #3E50B4;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
 }
-.content .lec_card .preview p {
+.content .lec_card_grid .preview:hover {
+  box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+}
+.content .lec_card_grid p {
   position: relative;
-  top: 80%;
+  margin-top: -23px;
   left: 7px;
   font-size: larger;
   color: white;
+  cursor: pointer;
 }
-.content .lec_card .preview:hover {
-  box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.3);
-}
-.content .lec_card .control {
+.content .lec_card_grid .control {
   width: 100%;
   height: 48px;
   background-color: #FAFAFA;
 }
-.content .lec_card .control ul {
+.content .lec_card_grid .control ul {
   list-style: none;
 }
-.content .lec_card .control ul li {
+.content .lec_card_grid .control ul li {
+  cursor: pointer;
   margin: 9px;
   height: 30px;
   width: 25px;
@@ -3538,26 +3620,116 @@ body {
   background-position: center;
   background-size: cover;
 }
-.content .lec_card .control ul .read {
+.content .lec_card_grid .control ul .read {
   background-image: url(../_pics/_icons/read.png);
 }
-.content .lec_card .control ul .download {
+.content .lec_card_grid .control ul .download {
   background-image: url(../_pics/_icons/download.png);
 }
-.content .lec_card .control ul .share {
+.content .lec_card_grid .control ul .share {
   background-image: url(../_pics/_icons/share.png);
 }
+.content .lec_card_list {
+  width: 90%;
+  height: 99px;
+  padding: 0 !important;
+  border: 1px #979797 solid;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  margin: 0 auto 40px;
+  border-radius: 4px;
+}
+.content .lec_card_list .preview {
+  float: left;
+  width: 99px;
+  height: 99px;
+  background-color: #3E50B4;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.content .lec_card_list .preview:hover {
+  box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+}
+.content .lec_card_list p {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: larger;
+  color: black;
+  cursor: pointer;
+}
+.content .lec_card_list p:after {
+  content: ' ';
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.14);
+}
+.content .lec_card_list .control {
+  margin-top: 12px;
+  width: 100%;
+  height: 48px;
+  background-color: #FAFAFA;
+}
+.content .lec_card_list .control ul {
+  list-style: none;
+}
+.content .lec_card_list .control ul li {
+  cursor: pointer;
+  margin: 15px 0;
+  height: 35px;
+  width: 27%;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content .lec_card_list .control ul .read {
+  background-image: url(../_pics/_icons/read.png);
+}
+.content .lec_card_list .control ul .read:after {
+  content: 'Read';
+  display: block;
+  position: relative;
+  top: 7px;
+  left: 128px;
+}
+.content .lec_card_list .control ul .download {
+  background-image: url(../_pics/_icons/download.png);
+}
+.content .lec_card_list .control ul .download:after {
+  content: 'Download';
+  display: block;
+  position: relative;
+  top: 7px;
+  left: 128px;
+}
+.content .lec_card_list .control ul .share {
+  background-image: url(../_pics/_icons/share.png);
+}
+.content .lec_card_list .control ul .share:after {
+  content: 'Share';
+  display: block;
+  position: relative;
+  top: 7px;
+  left: 128px;
+}
 
-footer {
+.footer {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   width: 100%;
   text-align: center;
 }
-footer p {
+.footer p {
   color: #696969;
   margin: 0 1px;
+}
+.footer a {
+  color: #696969;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

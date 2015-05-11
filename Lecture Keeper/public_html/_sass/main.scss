@@ -1,13 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 01.05.2015, 17:38:11
-    Author     : kostydenis
-*/
-
 @import "../_bourbon/bourbon.scss";
 @import "fonts.scss";
 
@@ -18,8 +8,10 @@ $face_icons: #636363;
 $face_text: #000000;
 $face_borders: #979797;
 
-$app_bar_line_height: 20px;
+$app_bar_line_height: 40px;
 $preview_color: #3E50B4;
+
+$menu_anim_duration: 0.3s;
 
 @mixin shadow_lvl1 {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
@@ -42,6 +34,14 @@ $preview_color: #3E50B4;
     padding: 0px;
 }
 
+.clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
 body {
     background-color: $main_bg;
     font-family: "Roboto";
@@ -60,26 +60,78 @@ body {
 .darken {
     @include position(fixed, 0 null null 0);
     z-index: 49;
-    height: 100%;
     width: 100%;
     @include menu_overlay;
+}
 
-    .menu {
-        @include shadow_lvl5;
-        @include position(fixed, 0 null null 0);
-        height: 100%;
-        width: 27%;
-        background-color: $paper_bg;
-        z-index: 50;
+.darken_hide {
+    opacity: 0;
+    height: 0;
+    transition: opacity $menu_anim_duration ease, height 0s ease $menu_anim_duration;
+}
+
+.darken_show {
+    opacity: 1;
+    height: 100%;
+    transition: opacity $menu_anim_duration ease;
+}
+
+.menu {
+    @include shadow_lvl5;
+    @include position(fixed, 0 null null null);
+    height: 100%;
+    width: 27%;
+    min-width: 100px;
+    background-color: $paper_bg;
+    z-index: 50;
+}
+
+.menu_hide {
+    left: -29%;
+    transition: left $menu_anim_duration ease;
+}
+
+.menu_show {
+    left: 0px;
+    transition: left $menu_anim_duration ease;
+}
+
+.app_bar {
+    @extend .clearfix;
+    @extend .nomargin;
+    @include position(fixed, 0 null null 0);
+    @include shadow_lvl1;
+    width: 100%;
+    height: $app_bar_line_height;
+    background-color: $paper_bg;
+    z-index: 48;
+    .pull-left {
+        float: left;
+        margin-left: 25px;
     }
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
+    .pull-right {
+        float: right;
+        margin-right: 25px;
+    }
+    ul {
+        @extend .nomargin;
+        list-style: none;
+        .menu_btn {}
+        li {
+            cursor: pointer;
+            margin: 0 5px 0 5px;
+            display: inline-block;
+            line-height: $app_bar_line_height;
+            img {
+                height: $app_bar_line_height / 2;
+                vertical-align: middle;
+            }
+            color: $face_text;
+            a {
+                color: $face_text;
+            }
+        }
+    }
 }
 
 .divider {
@@ -89,17 +141,48 @@ body {
 }
 
 .content {
+    @extend .clearfix;
     background: #FAFAFA;
     border: 1px solid $face_borders;
     @include shadow_lvl1;
     position: relative;
     z-index: 2;
-    margin: 200px auto 80px;
+    margin: 200px auto 90px;
     width: 940px;
-    h1 {}
-    h2 {}
-    .lec_card {
-        background-color: green;
+    h1, h2 {
+        margin-left: 10px;
+    }
+    .switch_view {
+        @extend .clearfix;
+        margin-top: -52px;
+        margin-bottom: 25px;
+        .grid, .list {
+            float: right;
+            width: 40px;
+            height: 26px;
+            color: $face_icons;
+            background-color: #D8D8D8;
+            span {
+                line-height: 26px;
+                margin: 0 12px;
+            }
+        }
+        .grid {
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+        .list {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            margin-right: 32px;
+        }
+        .not_pressed {
+            @include shadow_lvl1;
+        }
+    }
+
+    .lec_card_grid {
+        
         float: left;
         width: 250px;
         /*        height: 216px;*/
@@ -107,22 +190,27 @@ body {
         border: 1px $face_borders solid;
         @include shadow_lvl2;
         margin: 0 30.6px 40px;
+        border-radius: 4px;
         .preview {
             @extend .nomargin;
             width: 100%;
             height: 168px;
             background-color: $preview_color;
-            p {
-                @extend .nomargin;
-                position: relative;
-                top: 80%;
-                left: 7px;
-                font-size: larger;
-                color: white;
-            }
+            transition: box-shadow 0.2s ease;
             &:hover {
                 box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.3);
+                transition: box-shadow 0.2s ease;
             }
+            cursor: pointer;
+        }
+        p {
+            @extend .nomargin;
+            position: relative;
+            margin-top: -23px;
+            left: 7px;
+            font-size: larger;
+            color: white;
+            cursor: pointer;
         }
         .control {
             @extend .nomargin;
@@ -133,6 +221,7 @@ body {
                 list-style: none;
                 @extend .nomargin;
                 li {
+                    cursor: pointer;
                     @extend .nomargin;
                     margin: 9px;
                     height: 30px;
@@ -153,16 +242,112 @@ body {
             }
         }
     }
+
+    .lec_card_list {
+        width: 90%;
+        height: 99px;
+        padding: 0 !important;
+        border: 1px $face_borders solid;
+        @include shadow_lvl2;
+        margin: 0 auto 40px;
+        border-radius: 4px;
+        .preview {
+            @extend .clearfix;
+            @extend .nomargin;
+            float: left;
+            width: 99px;
+            height: 99px;
+            background-color: $preview_color;
+            transition: box-shadow 0.2s ease;
+            &:hover {
+                box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.3);
+                transition: box-shadow 0.2s ease;
+            }
+            cursor: pointer;
+        }
+        p {
+            @extend .nomargin;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            font-size: larger;
+            color: black;
+            cursor: pointer;
+            &:after {
+                content: ' ';
+                display: block;
+                width: 75%;
+                margin: 0 auto;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.14);
+            }
+        }
+        .control {
+            @extend .clearfix;
+            margin-top: 12px;
+            width: 100%;
+            height: 48px;
+            background-color: $paper_bg;
+            ul {
+                list-style: none;
+                @extend .nomargin;
+                li {
+                    cursor: pointer;
+                    margin: 15px 0;
+                    height: 35px;
+                    width: 27%;
+                    display: inline-block;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                .read {
+                    background-image: url(../_pics/_icons/read.png);
+                    &:after {
+                        content: 'Read';
+                        display: block;
+                        position: relative;
+                        top: 7px;
+                        left: 128px;
+                    }
+                }
+                .download {
+                    background-image: url(../_pics/_icons/download.png);
+                    &:after {
+                        content: 'Download';
+                        display: block;
+                        position: relative;
+                        top: 7px;
+                        left: 128px;
+                    }
+                }
+                .share {
+                    background-image: url(../_pics/_icons/share.png);
+                    &:after {
+                        content: 'Share';
+                        display: block;
+                        position: relative;
+                        top: 7px;
+                        left: 128px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-footer {
+.footer {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     width: 100%;
     text-align: center;
     p {
         color: #696969;
         margin: 0 1px;
+    }
+    a {
+        color: #696969;
+        text-decoration: underline;
     }
 }
