@@ -26,7 +26,8 @@ $menu_anim_duration: 0.3s;
 }
 
 @mixin menu_overlay {
-    @include radial-gradient(circle at 27% 50%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.6) 100%);
+    background-color: rgba(255, 255, 255, 0.6);
+    // @include radial-gradient(circle at 27% 50%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .nomargin {
