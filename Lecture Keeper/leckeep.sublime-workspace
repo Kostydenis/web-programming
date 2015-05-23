@@ -4,6 +4,162 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"render_template"
+			],
+			[
+				"getElemn",
+				"getElementsByClassName(${0:names})	Element"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"lec",
+				"lec_card_list"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"fun",
+				"function(){\n	$0\n})();	(function(){\n	$0\n})();"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"di",
+				"divider"
+			],
+			[
+				"brtr",
+				"border-bottom-right-radius"
+			],
+			[
+				"brr",
+				"bdbrrz	border-bottom-right-radius"
+			],
+			[
+				"sh",
+				"shadow_lvl5"
+			],
+			[
+				"fa",
+				"face_borders"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"wit",
+				"width"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"cur",
+				"cur	cursor"
+			],
+			[
+				"s",
+				"shadow_lvl5"
+			],
+			[
+				"no",
+				"nomargin"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"app",
+				"app_bar_line_height"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"menu",
+				"menu_anim_duration"
+			],
+			[
+				"me",
+				"menu_anim_duration"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"shadow_l",
+				"shadow_lvl2"
+			],
+			[
+				"fac",
+				"face_icons"
+			],
+			[
+				"rga",
+				"rgba"
+			],
+			[
+				"bx",
+				"bxsh+	box-shadow+"
+			],
+			[
 				"for",
 				"format"
 			],
@@ -26,10 +182,6 @@
 			[
 				"if",
 				"ife	if … else"
-			],
-			[
-				"in",
-				"inline-block"
 			],
 			[
 				"co",
@@ -84,6 +236,86 @@
 		"selected_items":
 		[
 			[
+				"j",
+				"Javascript Beautify"
+			],
+			[
+				"s",
+				"SassBeautify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"sas",
+				"SassBeautify"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"qui",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"saa",
+				"Snippet: text-align-last:auto"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"q",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"for",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"qi",
+				"CoolFormat: Quick Format"
+			],
+			[
 				"bui",
 				"Build With: python3"
 			],
@@ -118,10 +350,6 @@
 			[
 				"sethtm",
 				"Set Syntax: HTML"
-			],
-			[
-				"qui",
-				"CoolFormat: Quick Format"
 			],
 			[
 				"package con",
@@ -160,7 +388,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -182,14 +410,36 @@
 	"expanded_folders":
 	[
 		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper",
-		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/.sass-cache",
-		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/.sass-cache/00831d30b43d7f24f0f8481bfe89f9834747fdf5",
-		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html"
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/templates"
 	],
 	"file_history":
 	[
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/views.py",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/__init__.py",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/forms.py",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/templates/login.html",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/config.py",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/templates/base.html",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/templates/index.html",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/run.py",
+		"/Users/kostydenis/Documents/edu_local/ICS design/tex prez/doc/parse.py",
+		"/Users/kostydenis/Documents/edu_local/ICS design/task.txt",
+		"/Users/kostydenis/Documents/edu_local/TOY/lecture.md",
+		"/Users/kostydenis/Desktop/вот ту ду",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/_sass/main.scss",
+		"/Users/kostydenis/Documents/edu_local/electronic-engineering/lecture.md",
+		"/Users/kostydenis/Documents/edu_local/operation research/двойственная_задача_линейного_программирования.md",
+		"/Users/kostydenis/Documents/edu_local/eco/lecture.md",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/index2.html",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/_js/main.js",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/app/run.py",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/templates/index.html",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/_tmpl/index.html",
+		"/Users/kostydenis/Documents/edu_local/OTY/lab2/report/Unit1.pas",
+		"/Users/kostydenis/Documents/edu_local/OTY/lab1/report/Unit1.pas",
 		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/index.html",
-		"/Users/kostydenis/Documents/edu_local/style.css",
+		"/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/public_html/task.txt",
 		"/Users/kostydenis/Downloads/bootstrap/css/bootstrap.css",
 		"/Users/kostydenis/Downloads/bootstrap-3.3.4-dist/css/bootstrap.css",
 		"/Users/kostydenis/Downloads/bootstrap-3.3.4-dist/js/bootstrap.js",
@@ -205,6 +455,7 @@
 		"/Users/kostydenis/Library/Application Support/Mou/CSS/MyStyle.css",
 		"/Users/kostydenis/Documents/edu_local/electronic engeneering/style.css",
 		"/Users/kostydenis/Documents/edu_local/ICS design/style.css",
+		"/Users/kostydenis/Documents/edu_local/style.css",
 		"/Users/kostydenis/Documents/edu_local/ICS design/icsdesign.html",
 		"/Users/kostydenis/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/Users/kostydenis/Downloads/The Flash 2014  - 1x18 - Season 1  Episode 18.HDTV.HI.en.srt",
@@ -215,7 +466,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -229,6 +480,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"flask",
+			"float",
+			"clear",
+			"lec_card_grid",
+			"lec_card",
+			"sha",
 			"div",
 			"nav"
 		],
@@ -238,6 +495,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"lec_card_list",
+			"lec_card_grid"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -255,11 +514,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -293,10 +552,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "/Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/leckeep.sublime-project",
+	"project": "leckeep.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -305,6 +564,66 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"sass",
+				"Lecture Keeper/public_html/_sass/main.scss"
+			],
+			[
+				"electronic",
+				"edu_local/electronic-engineering/lecture.md"
+			],
+			[
+				"operation",
+				"edu_local/operation research/двойственная_задача_линейного_программирования.md"
+			],
+			[
+				"ele/le",
+				"edu_local/eco/lecture.md"
+			],
+			[
+				"main.j",
+				"public_html/_js/main.js"
+			],
+			[
+				"mai",
+				"public_html/_sass/main.scss"
+			],
+			[
+				"in",
+				"public_html/index2.html"
+			],
+			[
+				"templates",
+				"public_html/app/templates/index.html"
+			],
+			[
+				"templates/",
+				"public_html/templates/index.html"
+			],
+			[
+				"view",
+				"public_html/app/views.py"
+			],
+			[
+				"app",
+				"public_html/app/run.py"
+			],
+			[
+				"main",
+				"public_html/_sass/main.scss"
+			],
+			[
+				"py",
+				"public_html/app/views.py"
+			],
+			[
+				"ini",
+				"public_html/app/__init__.py"
+			],
+			[
+				"run",
+				"public_html/app/run.py"
+			]
 		],
 		"width": 0.0
 	},
