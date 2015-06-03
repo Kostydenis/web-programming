@@ -17,8 +17,8 @@ discipline_list = [web, ics, electr]
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template("index.html")
+    return render_template('index.html', discipline_list = discipline_list)
 
 @app.route('/about')
 def about():
-	return render_template("about.html")
+	return render_template('about.html', discipline_list = discipline_list)

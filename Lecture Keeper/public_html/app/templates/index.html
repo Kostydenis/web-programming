@@ -6,7 +6,8 @@
         </div>
 
         {% for discipline in discipline_list %}
-            {% block card %}{% endblock %}
+        	{% set post_loop = loop %}
+            {% include "card.html" %}
         {% endfor %}
 
 	{% endblock %}

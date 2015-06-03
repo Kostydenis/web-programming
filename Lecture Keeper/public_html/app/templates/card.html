@@ -1,15 +1,14 @@
-{% extends "index.html" %}
-    {% block card %}
-        <div class="lec_card_grid">
-            <div class="preview" onclick="show_menu();"></div>
+{% block card %}
+    <div class="lec_card_grid">
+        <div class="preview" onclick="show_menu();"></div>
 
-            <p onclick="location.href='#'">{{ discipline.name }}</p>
-            <div class="control">
-                <ul>
-                    <li class="read" alt="Read lecture" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'";"></li>
-                    <li class="download" alt="Download PDF" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'{{ discipline.code }}'.pdf'";"></li>
-                    <li class="share" alt="Get direct link" onclick="alert('Under construction')"></li>
-                </ul>
-            </div>
+        <p onclick="location.href='#'">{{ discipline.name }}</p>
+        <div class="control">
+            <ul>
+                <li class="read" alt="Read lecture" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'";"></li>
+                <li class="download" alt="Download PDF" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'{{ discipline.code }}'.pdf'";"></li>
+                <li class="share" alt="Get direct link" onclick="alert('Under construction')"></li>
+            </ul>
         </div>
-    {% endblock %}
+    </div>
+{% endblock %}
