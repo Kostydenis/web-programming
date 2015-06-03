@@ -1,7 +1,12 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Hi, {{user.nickname}}!</h1>
-{% for post in posts %}
-<div><p>{{post.author.nickname}} says: <b>{{post.body}}</b></p></div>
-{% endfor %}
-{% endblock %}
+{% extends 'base.html' %}
+	{% block disciplines %}
+        <div class="switch_view">
+            <div class="list not_pressed" onclick="switch_to_list()"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+            <div class="grid" onclick="switch_to_grid()"><span class="glyphicon glyphicon-th"></span></div>
+        </div>
+
+        {% for discipline in discipline_list %}
+            {% block card %}{% endblock %}
+        {% endfor %}
+
+	{% endblock %}

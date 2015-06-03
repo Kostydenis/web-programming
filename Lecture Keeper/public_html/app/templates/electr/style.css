@@ -1,0 +1,262 @@
+OL {
+counter-reset:item;
+}
+
+ol > LI > p:first-of-type {
+display:inline;
+padding-left:9px;
+}
+
+ol > LI:before {
+content:counters(item,".") ". ";
+counter-increment:item;
+}
+
+ol,ul {
+margin-top:3px;
+margin-bottom:5px;
+}
+
+.discipline {
+text-align:center;
+font-weight:bolder;
+font-size:xx-large;
+color:#404040;
+line-height:35px;
+}
+
+.teacher {
+text-align:right;
+font-size:16px;
+color:#CCC;
+}
+
+p {
+text-align:justify;
+text-indent:25px;
+margin-top:0;
+margin-bottom:1px;
+}
+
+ul > li:before {
+content:'\2014\0020';
+}
+
+li {
+margin-bottom:2px;
+list-style-type:none;
+}
+
+body {
+font-family:"Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+font-size:16px;
+line-height:18px;
+color:#737373;
+background-color:#fff;
+border:1px solid;
+-webkit-box-shadow:5px 10px 15px 5px rgba(0,0,0,0.4);
+-moz-box-shadow:5px 10px 15px 5px rgba(0,0,0,0.4);
+box-shadow:5px 10px 15px 5px rgba(0,0,0,0.4);
+padding:20px;
+}
+
+table {
+border-collapse:collapse;
+margin:15px auto 7px;
+}
+
+td,th {
+border:1px solid #ddd;
+padding:3px 10px;
+}
+
+th {
+padding:5px 10px;
+}
+
+a {
+color:#0069d6;
+}
+
+a:hover {
+color:#0050a3;
+text-decoration:none;
+}
+
+a img {
+border:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color:#404040;
+line-height:36px;
+}
+
+h1 {
+margin-bottom:7px;
+margin-top:50px;
+font-size:30px;
+text-align:center;
+}
+
+h2 {
+font-size:24px;
+padding-left:25px;
+}
+
+h3 {
+font-size:18px;
+}
+
+h4 {
+font-size:16px;
+}
+
+h5 {
+font-size:14px;
+}
+
+h6 {
+font-size:13px;
+}
+
+h3,h4,h5,h6 {
+font-weight:400;
+padding-left:50px;
+}
+
+hr {
+border:0;
+border-bottom:1px solid #ccc;
+margin:0 0 19px;
+}
+
+blockquote {
+margin-bottom:18px;
+font-family:georgia,serif;
+font-style:italic;
+padding:13px 13px 21px 15px;
+}
+
+blockquote:before {
+content:"\201C";
+font-size:40px;
+margin-left:-10px;
+font-family:georgia,serif;
+color:#eee;
+}
+
+blockquote p {
+font-size:14px;
+font-weight:300;
+line-height:18px;
+margin-bottom:0;
+font-style:italic;
+}
+
+code,pre {
+font-family:Monaco, Andale Mono, Courier New, monospace;
+}
+
+code {
+background-color:#fee9cc;
+color:rgba(0,0,0,0.75);
+font-size:12px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+padding:1px 3px;
+}
+
+pre {
+display:block;
+line-height:16px;
+font-size:11px;
+border:1px solid #d9d9d9;
+white-space:pre-wrap;
+word-wrap:break-word;
+margin:0 0 18px;
+padding:14px;
+}
+
+pre code {
+background-color:#fff;
+color:#737373;
+font-size:11px;
+padding:0;
+}
+
+sup {
+font-size:.83em;
+vertical-align:super;
+line-height:0;
+}
+
+img {
+display:block;
+border:1px solid #ccc;
+margin:10px auto 25px;
+padding:10px;
+max-width: 95%;
+}
+
+img,
+table,
+.framed,
+.ovaled {
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+* {
+-webkit-print-color-adjust:exact;
+}
+
+.date {
+color:#DDD;
+text-align:right;
+border-bottom:1px solid #DDD;
+width:94%;
+margin:20px auto 7px;
+}
+
+dl {
+padding-left:25px;
+text-align:justify;
+}
+
+.framed {
+border:1px solid #AAA;
+width:85%;
+margin:30px;
+padding:15px;
+}
+
+.ovaled {
+border:1px solid #AAA;
+width:85%;
+border-radius:50%;
+margin:30px;
+padding:15px;
+}
+
+.irony {
+font-style:italic;
+color:#c00000;
+}
+
+@media screen and min-width 914px {
+body {
+width:854px;
+margin:50px auto;
+}
+}
+
+@media print {
+body,code,pre code,h1,h2,h3,h4,h5,h6 {
+color:#000;
+}
+
+table,pre {
+page-break-inside:avoid;
+}
+}
