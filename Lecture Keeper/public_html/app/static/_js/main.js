@@ -4,17 +4,24 @@ function switch_clss(clss, what, toWhat) {
         tmp[i].setAttribute('class', tmp[0].className.replace(what, toWhat))
     };
 }
+function switch_onclck(clss, what) {
+    tmp = document.getElementsByClassName(clss);
+    for (var i = tmp.length - 1; i >= 0; i--) {
+        tmp[i].setAttribute('onclick', what)
+    };
+}
 
 function show_menu() {
     switch_clss('darken', 'hide', 'show');
     switch_clss('menu', 'hide', 'show');
+    switch_onclck('menu_btn', 'hide_menu()');
 };
 
 function hide_menu() {
     switch_clss('darken', 'show', 'hide');
     switch_clss('menu', 'show', 'hide');
+    switch_onclck('menu_btn', 'show_menu()');
 };
-
 
 function switch_to_list() {
     switch_clss('lec_card_grid', 'grid', 'list');
@@ -24,13 +31,6 @@ function switch_to_list() {
 
 	tmp = document.getElementsByClassName('grid');
     tmp[0].setAttribute('class', 'grid not_pressed');
-
-    // switch_clss('grid', 'grid', 'grid not_pressed');
-    // switch_clss('list not_pressed', 'list not_pressed', 'list');
-
-    // switch_clss('list', 'list', 'list not_pressed');
-    // switch_clss('grid not_pressed', 'grid not_pressed', 'grid');
-
 }
 
 function switch_to_grid() {
@@ -41,10 +41,4 @@ function switch_to_grid() {
 
 	tmp = document.getElementsByClassName('list');
     tmp[0].setAttribute('class', 'list not_pressed');
-
-    // switch_clss('grid', 'grid', 'grid not_pressed');
-    // switch_clss('list not_pressed', 'list not_pressed', 'list');
-
-    // switch_clss('list', 'list', 'list not_pressed');
-    // switch_clss('grid not_pressed', 'grid not_pressed', 'grid');
 }

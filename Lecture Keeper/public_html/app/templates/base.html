@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='_css/main.css') }}" />
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
     <div class="hero"></div>
     <div class="app_bar">
         <ul class="pull-left">
             <li class="fa fa-bars menu_btn" onclick="show_menu()"></li>
-            <li><a href="">Home</a></li>
+            <li><a href="/">Home</a></li>
         </ul>
         <ul class="pull-right">
             <li><a href="/about">About</a></li>
-            <li onclick="location.href='#'"><img src="{{ url_for('static', filename='_pics/_icons/top.png') }}" /></li>
+            <li onclick="location.href='#'">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#ffffff" d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+                </svg>
+            </li>
         </ul>
     </div>
 
     <div class="darken darken_hide" onclick="hide_menu()" id="darken"></div>
 
     <div class="menu menu_hide" id="menu">
-        <h1>Lecture Keeper</h1>
+        <h1><a href="/">Lecture Keeper</a></h1>
         <div class="divider"></div>
         <ul>
             {% for discipline in discipline_list %}
@@ -31,12 +37,18 @@
     </div>
 
     <div class="content">
-        <h1>Lecture Keeper</h1>
+        <a href="https://github.com/Kostydenis/web-programming/tree/master/Lecture%20Keeper">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+        </a>
+    
+        <h1 class="non_lecture">Lecture Keeper</h1>
         <div class="divider"></div>
-        <h2>Лекции и другие материалы АСУб-12-1</h2>
+        <!-- <div class="non_lecture_divider"></div> -->
+        <h2 class="non_lecture">Лекции и другие материалы АСУб-12-1</h2>
 
         {% block disciplines %}{% endblock %}
         {% block about %}{% endblock %}
+        {% block lecture %}{% endblock %}
 
     </div>
 

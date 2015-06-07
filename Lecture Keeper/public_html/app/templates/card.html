@@ -1,12 +1,12 @@
 {% block card %}
     <div class="lec_card_grid">
-        <div class="preview" onclick="show_menu();"></div>
+        <div class="preview" onclick="location.href='{{ discipline.code }}' "></div>
 
-        <p onclick="location.href='#'">{{ discipline.name }}</p>
+        <p onclick="location.href='{{ discipline.code }}' ">{{ discipline.name }}</p>
         <div class="control">
             <ul>
-                <li class="read" alt="Read lecture" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'";"></li>
-                <li class="download" alt="Download PDF" onclick="document.location.href = "'/diciplines/'{{ discipline.code }}'/'{{ discipline.code }}'.pdf'";"></li>
+                <li class="read" alt="Read lecture" onclick="location.href='{{ discipline.code }}' "></li>
+                <li class="download" alt="Download PDF" onclick="location.href='{{ discipline.pdf }}'"></li>
                 <li class="share" alt="Get direct link" onclick="alert('Under construction')"></li>
             </ul>
         </div>
