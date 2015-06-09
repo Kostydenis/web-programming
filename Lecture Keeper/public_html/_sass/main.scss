@@ -64,6 +64,9 @@ body {
     @media (max-width: 655px) {
         position: fixed;
     }
+    @media print {
+        display: none;
+    }
 }
 
 .darken {
@@ -173,6 +176,9 @@ body {
         font-size: x-large;
         transition: height $menu_anim_duration ease;
     }
+    @media print {
+        display: none;
+    }
     
     .pull-left {
         float: left;
@@ -235,6 +241,13 @@ body {
         width: 100%;
         min-width: 480px;
         transition: width $menu_anim_duration ease;
+    }
+
+    @media print {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        width: 100%;
     }
 
     h1, h2 {
@@ -696,5 +709,8 @@ body {
     a {
         color: #696969;
         text-decoration: underline;
+    }
+    @media print {
+        display: none;
     }
 }

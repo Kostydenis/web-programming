@@ -2631,6 +2631,9 @@ body {
   @media (max-width: 655px) {
     .hero {
       position: fixed; } }
+  @media print {
+    .hero {
+      display: none; } }
 
 .darken {
   position: fixed;
@@ -2701,6 +2704,9 @@ body {
       line-height: 60px;
       font-size: x-large;
       transition: height 0.3s ease; } }
+  @media print {
+    .app_bar {
+      display: none; } }
   .app_bar .pull-left {
     float: left;
     margin-left: 25px; }
@@ -2749,6 +2755,12 @@ body {
       width: 100%;
       min-width: 480px;
       transition: width 0.3s ease; } }
+  @media print {
+    .content {
+      margin: 0;
+      box-shadow: none;
+      border: none;
+      width: 100%; } }
   .content h1, .content h2 {
     margin-left: 10px; }
   .content .switch_view {
@@ -3071,3 +3083,6 @@ body {
   .footer a {
     color: #696969;
     text-decoration: underline; }
+  @media print {
+    .footer {
+      display: none; } }
