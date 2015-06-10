@@ -1,16 +1,38 @@
-\part{Листинги приложения}
+\captionsetup[figure]{labelformat=mylisting}
+
+\chapter{Листинги приложения}
 
 Все исходные коды приложения можно разделить на серверную и клиентскую части. В серверную часть входят файлы, запускаемые на сервере и учавствующие в процессе разработки, а в клиентскую - то, что отображается пользователю - шаблоны и стили.
 
-\section{Серверная часть}
-\lstinputlisting[Python]{../public_html/run.py}
-\lstinputlisting[Python]{../public_html/app/__init__.py}
-\lstinputlisting[Python]{../public_html/app/views.py}
-\lstinputlisting[CSS]{../public_html/_sass/main.scss}
+\input{codes/__init__.py}
+\begin{figure}[h!]
+	\caption{\_\_init\_\_.py}
+\end{figure}
 
-\lstinputlisting[HTML]{../public_html/app/static/_js/main.js}
-\lstinputlisting[HTML]{../public_html/app/templates/base.html}
-\lstinputlisting[HTML]{../public_html/app/templates/index.html}
-\lstinputlisting[HTML]{../public_html/app/templates/card.html}
+\input{codes/views.py}
+\begin{figure}[h!]
+	\caption{views.py}
+\end{figure}
 
-\section{Клиентская часть}
+	\input{codes/run.py}
+\begin{figure}[h!]
+	\caption{run.py}
+\end{figure}
+
+\section{Шаблоны}
+
+%\input{codes/base.html}
+%\begin{figure}[h!]
+%	\caption{base.html}
+%\end{figure}
+
+%\input{codes/index.html}
+%\begin{figure}[h!]
+%	\includegraphics[height=0.1cm]{}
+%	\caption{index.html}
+%\end{figure}
+
+%\input{codes/card.html}
+%\begin{figure}[h!]
+%	\caption{card.html}
+%\end{figure}

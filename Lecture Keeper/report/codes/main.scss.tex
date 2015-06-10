@@ -1,0 +1,745 @@
+\noindent
+\ttfamily
+\hlstd{}\hllin{\ \ \ 1\ }\hlkwc{@import\ }\hlstd{}\hlstr{\dq{}../\textunderscore bourbon/bourbon.scss\dq{}}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 2\ }\hlstd{}\hlkwc{@import\ }\hlstd{}\hlstr{\dq{}fonts.scss\dq{}}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 3\ }\hlstd{}\\
+\hllin{\ \ \ 4\ }\hlkwb{\$main\textunderscore bg}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#EEEEEE}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 5\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#FAFAFA}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 6\ }\hlstd{}\\
+\hllin{\ \ \ 7\ }\hlkwb{\$face\textunderscore icons}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#636363}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 8\ }\hlstd{}\hlkwb{\$face\textunderscore text}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#000000}\hlstd{}\hlopt{;}\\
+\hllin{\ \ \ 9\ }\hlstd{}\hlkwb{\$face\textunderscore borders}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#979797}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 10\ }\hlstd{}\\
+\hllin{\ \ 11\ }\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{40px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 12\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height\textunderscore mobile}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{60px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 13\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{\#3F51B5}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 14\ }\hlstd{}\\
+\hllin{\ \ 15\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration}\hlstd{}\hlopt{:\ }\hlstd{}\hlnum{0.3s}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 16\ }\hlstd{}\\
+\hllin{\ \ 17\ }\hlkwc{@mixin\ }\hlstd{shadow\textunderscore lvl1\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 18\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{}\hlnum{0px\ 2px\ 4px\ 0px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.5}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 19\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 20\ }\hlstd{}\\
+\hllin{\ \ 21\ }\hlkwc{@mixin\ }\hlstd{shadow\textunderscore lvl2\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 22\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{}\hlnum{0px\ 4px\ 8px\ 0px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.5}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 23\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 24\ }\hlstd{}\\
+\hllin{\ \ 25\ }\hlkwc{@mixin\ }\hlstd{shadow\textunderscore lvl5\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 26\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{}\hlnum{5px\ 0px\ 15px\ 7px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.5}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 27\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 28\ }\hlstd{}\\
+\hllin{\ \ 29\ }\hlkwc{@mixin\ }\hlstd{menu\textunderscore overlay\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 30\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{255}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{255}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{255}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.6}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 31\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ @include\ radial{-}gradient(circle\ at\ 27\%\ 50\%,\ rgba(0,\ 0,}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.3}\hlstd{}\hlopt{)\ }\hlstd{}\hlnum{28}\hlstd{}\hlopt{\%,\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{.}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{6}\hlstd{}\hlopt{)\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%);}\Righttorque\\
+\hllin{\ \ 32\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ \ 33\ }\hlstd{}\\
+\hllin{\ \ 34\ }\hlopt{.}\hlstd{nomargin\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 35\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 36\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:\ }\hlstd{}\hlnum{0px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 37\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 38\ }\hlstd{}\\
+\hllin{\ \ 39\ }\hlopt{.}\hlstd{clearfix\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 40\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{after\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 41\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:\ }\hlstd{}\hlstr{''}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 42\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{block}\hlopt{;}\\
+\hllin{\ \ 43\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{clear}\hlopt{:\ }\hlstd{both}\hlopt{;}\\
+\hllin{\ \ 44\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 45\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 46\ }\hlstd{\\
+\hllin{\ \ 47\ }body\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 48\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ \ 49\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ \ 50\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$main\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 51\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}family}\hlopt{:\ }\hlstd{}\hlstr{\dq{}Roboto\dq{}}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 52\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 53\ }\hlstd{}\\
+\hllin{\ \ 54\ }\hlopt{.}\hlstd{hero\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 55\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(../}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{hero}\hlopt{.}\hlstd{jpg}\hlopt{);}\\
+\hllin{\ \ 56\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{}\hlkwd{position}\hlstd{}\hlopt{(}\hlstd{absolute}\hlopt{,\ }\hlstd{}\hlnum{0\ }\hlstd{null\ null\ }\hlnum{0}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 57\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ \ 58\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{min{-}width}\hlopt{:\ }\hlstd{}\hlnum{480px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 59\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{371px}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 60\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}size}\hlopt{:\ }\hlstd{cover}\hlopt{;}\\
+\hllin{\ \ 61\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}position}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ \ 62\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{z{-}index}\hlopt{:\ }\hlstd{}\hlnum{1}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 63\ }\hlstd{\\
+\hllin{\ \ 64\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{}\hlopt{(}\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{655px}\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 65\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{fixed}\hlopt{;}\\
+\hllin{\ \ 66\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 67\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{print\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 68\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ \ 69\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 70\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 71\ }\hlstd{}\\
+\hllin{\ \ 72\ }\hlopt{.}\hlstd{darken\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 73\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{}\hlkwd{position}\hlstd{}\hlopt{(}\hlstd{fixed}\hlopt{,\ }\hlstd{}\hlnum{0\ }\hlstd{null\ null\ }\hlnum{0}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 74\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{z{-}index}\hlopt{:\ }\hlstd{}\hlnum{49}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 75\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ \ 76\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{menu\textunderscore overlay}\hlopt{;}\\
+\hllin{\ \ 77\ }\hlstd{\\
+\hllin{\ \ 78\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ @media\ (max{-}width:\ 655px)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 79\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{display:\ none;}\\
+\hllin{\ \ 80\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ \usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 81\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 82\ }\hlstd{}\\
+\hllin{\ \ 83\ }\hlopt{.}\hlstd{darken\textunderscore hide\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 84\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{opacity}\hlopt{:\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 85\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 86\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{opacity\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{,\ }\hlstd{height\ }\hlnum{0s\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{ease\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 87\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 88\ }\hlstd{}\Righttorque\\
+\hllin{\ \ 89\ }\hlopt{.}\hlstd{darken\textunderscore show\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 90\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{opacity}\hlopt{:\ }\hlstd{}\hlnum{1}\hlstd{}\hlopt{;}\\
+\hllin{\ \ 91\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ \ 92\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{opacity\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ \ 93\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 94\ }\hlstd{}\\
+\hllin{\ \ 95\ }\hlopt{.}\hlstd{menu\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 96\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl5}\hlopt{;}\\
+\hllin{\ \ 97\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{}\hlkwd{position}\hlstd{}\hlopt{(}\hlstd{fixed}\hlopt{,\ }\hlstd{}\hlnum{0\ }\hlstd{null\ null\ null}\hlopt{);}\\
+\hllin{\ \ 98\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ \ 99\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{350px}\hlstd{}\hlopt{;}\\
+\hllin{\ 100\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 101\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{z{-}index}\hlopt{:\ }\hlstd{}\hlnum{50}\hlstd{}\hlopt{;}\\
+\hllin{\ 102\ }\hlstd{\\
+\hllin{\ 103\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ SLIDE\ FROM\ TOP\ {-}\ DEPRECATED}\\
+\hllin{\ 104\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ @media\ (max{-}width:\ 655px)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 105\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{@include\ position(fixed,\ null\ 0\ null\ null);}\\
+\hllin{\ 106\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{margin:\ \$app\textunderscore bar\textunderscore line\textunderscore height\ 0;}\\
+\hllin{\ 107\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{width:\ 100\%;}\\
+\hllin{\ 108\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{min{-}width:\ 480px;}\\
+\hllin{\ 109\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{z{-}index:\ 40;}\\
+\hllin{\ 110\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ \usebox{\hlboxclosebrace}}\\
+\hllin{\ 111\ }\hlstd{\\
+\hllin{\ 112\ }}\hlstd{\ \ \ \ }\hlstd{h1\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 113\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}align}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ 114\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{a\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 115\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 116\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 117\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 118\ }\hlstd{\\
+\hllin{\ 119\ }}\hlstd{\ \ \ \ }\hlstd{ul\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 120\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{list{-}style{-}type}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 121\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{li\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 122\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{text{-}align}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ 123\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 124\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 125\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:\ }\hlstd{}\hlnum{40px}\hlstd{}\hlopt{;}\\
+\hllin{\ 126\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{vertical{-}align}\hlopt{:\ }\hlstd{middle}\hlopt{;}\\
+\hllin{\ 127\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ }\hlstd{auto}\hlopt{;}\\
+\hllin{\ 128\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:\ }\hlstd{larger}\hlopt{;}\\
+\hllin{\ 129\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{a\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 130\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{text{-}decoration}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 131\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 132\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 133\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 134\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 135\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 136\ }\hlstd{}\\
+\hllin{\ 137\ }\hlopt{.}\hlstd{menu\textunderscore hide\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 138\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{{-}480px}\hlopt{;}\\
+\hllin{\ 139\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{left\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 140\ }\hlstd{\\
+\hllin{\ 141\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ SLIDE\ FROM\ TOP\ {-}\ DEPRECATED}\\
+\hllin{\ 142\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ @media\ (max{-}width:\ 655px)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 143\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{left:\ 0;}\\
+\hllin{\ 144\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{top:\ {-}120\%;}\\
+\hllin{\ 145\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{transition:\ top\ \$menu\textunderscore anim\textunderscore duration\ ease;}\\
+\hllin{\ 146\ }\hlstd{\\
+\hllin{\ 147\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ \usebox{\hlboxclosebrace}}\\
+\hllin{\ 148\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 149\ }\hlstd{}\\
+\hllin{\ 150\ }\hlopt{.}\hlstd{menu\textunderscore show\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 151\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{0px}\hlstd{}\hlopt{;}\\
+\hllin{\ 152\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{left\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 153\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{\\
+\hllin{\ 154\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ SLIDE\ FROM\ TOP\ {-}\ DEPRECATED}\\
+\hllin{\ 155\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ @media\ (max{-}width:\ 655px)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 156\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{top:\ 0;}\\
+\hllin{\ 157\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//}\hlstd{\ \ \ \ \ }\hlslc{transition:\ top\ \$menu\textunderscore anim\textunderscore duration\ ease;}\\
+\hllin{\ 158\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ \usebox{\hlboxclosebrace}}\\
+\hllin{\ 159\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 160\ }\hlstd{}\\
+\hllin{\ 161\ }\hlopt{.}\hlstd{app\textunderscore bar\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 162\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{clearfix}\hlopt{;}\\
+\hllin{\ 163\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 164\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{}\hlkwd{position}\hlstd{}\hlopt{(}\hlstd{fixed}\hlopt{,\ }\hlstd{}\hlnum{0\ }\hlstd{null\ null\ }\hlnum{0}\hlstd{}\hlopt{);}\\
+\hllin{\ 165\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl1}\hlopt{;}\\
+\hllin{\ 166\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 167\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{min{-}width}\hlopt{:\ }\hlstd{}\hlnum{480px}\hlstd{}\hlopt{;}\\
+\hllin{\ 168\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height}\hlstd{}\hlopt{;}\\
+\hllin{\ 169\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 170\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{z{-}index}\hlopt{:\ }\hlstd{}\hlnum{48}\hlstd{}\hlopt{;}\\
+\hllin{\ 171\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{height\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 172\ }\hlstd{\\
+\hllin{\ 173\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{}\hlopt{(}\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{655px}\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 174\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height\textunderscore mobile}\hlstd{}\hlopt{;}\\
+\hllin{\ 175\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height\textunderscore mobile}\hlstd{}\hlopt{;}\\
+\hllin{\ 176\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:\ }\hlstd{x{-}large}\hlopt{;}\\
+\hllin{\ 177\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{height\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 178\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 179\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{print\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 180\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 181\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 182\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{\\
+\hllin{\ 183\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{pull{-}left\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 184\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{float}\hlopt{:\ }\hlstd{left}\hlopt{;}\\
+\hllin{\ 185\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}left}\hlopt{:\ }\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 186\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 187\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{pull{-}right\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 188\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{float}\hlopt{:\ }\hlstd{right}\hlopt{;}\\
+\hllin{\ 189\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}right}\hlopt{:\ }\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 190\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 191\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{ul\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 192\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 193\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{list{-}style}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 194\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{li\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 195\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 196\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ 5px\ 0\ 5px}\hlstd{}\hlopt{;}\\
+\hllin{\ 197\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{inline{-}block}\hlopt{;}\\
+\hllin{\ 198\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height}\hlstd{}\hlopt{;}\\
+\hllin{\ 199\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{vertical{-}align}\hlopt{:\ }\hlstd{middle}\hlopt{;}\\
+\hllin{\ 200\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{svg\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 201\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 202\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{fill}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 203\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height}\hlstd{}\hlopt{;}\\
+\hllin{\ 204\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlkwb{\$app\textunderscore bar\textunderscore line\textunderscore height}\hlstd{}\hlopt{;}\\
+\hllin{\ 205\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{vertical{-}align}\hlopt{:\ }\hlstd{middle}\hlopt{;}\\
+\hllin{\ 206\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 207\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 208\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{a\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 209\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 210\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 211\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 212\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 213\ }\hlstd{}\\
+\hllin{\ 214\ }\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 215\ }\hlstd{}\\
+\hllin{\ 216\ }\hlopt{.}\hlstd{divider\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 217\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 218\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{1px}\hlstd{}\hlopt{;}\\
+\hllin{\ 219\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.14}\hlstd{}\hlopt{);}\\
+\hllin{\ 220\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 221\ }\hlstd{}\\
+\hllin{\ 222\ }\hlopt{.}\hlstd{content\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 223\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{clearfix}\hlopt{;}\\
+\hllin{\ 224\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background}\hlopt{:\ }\hlstd{}\hlnum{\#FAFAFA}\hlstd{}\hlopt{;}\\
+\hllin{\ 225\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:\ }\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlkwb{\$face\textunderscore borders}\hlstd{}\hlopt{;}\\
+\hllin{\ 226\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl1}\hlopt{;}\\
+\hllin{\ 227\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 228\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{z{-}index}\hlopt{:\ }\hlstd{}\hlnum{2}\hlstd{}\hlopt{;}\\
+\hllin{\ 229\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{200px\ }\hlstd{auto\ }\hlnum{90px}\hlstd{}\hlopt{;}\\
+\hllin{\ 230\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:\ }\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 231\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{940px}\hlstd{}\hlopt{;}\\
+\hllin{\ 232\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{width\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 233\ }\hlstd{\\
+\hllin{\ 234\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{}\hlopt{(}\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{955px}\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 235\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{627px}\hlstd{}\hlopt{;}\\
+\hllin{\ 236\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{width\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 237\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 238\ }\hlstd{\\
+\hllin{\ 239\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{}\hlopt{(}\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{655px}\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 240\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{371px\ 0\ 90px}\hlstd{}\hlopt{;}\\
+\hllin{\ 241\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 242\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{min{-}width}\hlopt{:\ }\hlstd{}\hlnum{480px}\hlstd{}\hlopt{;}\\
+\hllin{\ 243\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{width\ }\hlkwb{\$menu\textunderscore anim\textunderscore duration\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 244\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 245\ }\hlstd{\\
+\hllin{\ 246\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{print\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 247\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 248\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 249\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 250\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 251\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 252\ }\hlstd{\\
+\hllin{\ 253\ }}\hlstd{\ \ \ \ }\hlstd{h1}\hlopt{,\ }\hlstd{h2\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 254\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}left}\hlopt{:\ }\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 255\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 256\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{switch\textunderscore view\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 257\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{clearfix}\hlopt{;}\\
+\hllin{\ 258\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}top}\hlopt{:\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 259\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:\ }\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 260\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{grid}\hlopt{,\ .}\hlstd{list\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 261\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{float}\hlopt{:\ }\hlstd{right}\hlopt{;}\\
+\hllin{\ 262\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{40px}\hlstd{}\hlopt{;}\\
+\hllin{\ 263\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{26px}\hlstd{}\hlopt{;}\\
+\hllin{\ 264\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlkwb{\$face\textunderscore icons}\hlstd{}\hlopt{;}\\
+\hllin{\ 265\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlnum{\#D8D8D8}\hlstd{}\hlopt{;}\\
+\hllin{\ 266\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{span\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 267\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:\ }\hlstd{}\hlnum{26px}\hlstd{}\hlopt{;}\\
+\hllin{\ 268\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ 12px}\hlstd{}\hlopt{;}\\
+\hllin{\ 269\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 270\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 271\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{grid\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 272\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{border{-}top{-}left{-}radius}\hlopt{:\ }\hlstd{}\hlnum{2px}\hlstd{}\hlopt{;}\\
+\hllin{\ 273\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{border{-}bottom{-}left{-}radius}\hlopt{:\ }\hlstd{}\hlnum{2px}\hlstd{}\hlopt{;}\\
+\hllin{\ 274\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 275\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{list\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 276\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{border{-}top{-}right{-}radius}\hlopt{:\ }\hlstd{}\hlnum{2px}\hlstd{}\hlopt{;}\\
+\hllin{\ 277\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{border{-}bottom{-}right{-}radius}\hlopt{:\ }\hlstd{}\hlnum{2px}\hlstd{}\hlopt{;}\\
+\hllin{\ 278\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin{-}right}\hlopt{:\ }\hlstd{}\hlnum{32px}\hlstd{}\hlopt{;}\\
+\hllin{\ 279\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 280\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{not\textunderscore pressed\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 281\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl1}\hlopt{;}\\
+\hllin{\ 282\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 283\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 284\ }\hlstd{\\
+\hllin{\ 285\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{lec\textunderscore card\textunderscore grid\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 286\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{\\
+\hllin{\ 287\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{float}\hlopt{:\ }\hlstd{left}\hlopt{;}\\
+\hllin{\ 288\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{250px}\hlstd{}\hlopt{;}\\
+\hllin{\ 289\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlcom{/{*}}\hlstd{\ \ \ \ \ \ \ \ }\hlcom{height:\ 216px;{*}/}\hlstd{\\
+\hllin{\ 290\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{padding}\hlopt{:\ }\hlstd{}\hlnum{0\ }\hlstd{}\hlopt{!}\hlstd{important}\hlopt{;}\\
+\hllin{\ 291\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border}\hlopt{:\ }\hlstd{}\hlnum{1px\ }\hlstd{}\hlkwb{\$face\textunderscore borders\ }\hlstd{solid}\hlopt{;}\\
+\hllin{\ 292\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl2}\hlopt{;}\\
+\hllin{\ 293\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ 30.6px\ 40px}\hlstd{}\hlopt{;}\\
+\hllin{\ 294\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border{-}radius}\hlopt{:\ }\hlstd{}\hlnum{4px}\hlstd{}\hlopt{;}\\
+\hllin{\ 295\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{\\
+\hllin{\ 296\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{}\hlopt{(}\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{655px}\hlstd{}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 297\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ 25}\hlstd{}\hlopt{\%\ }\hlstd{}\hlnum{40px}\hlstd{}\hlopt{;\ }\\
+\hllin{\ 298\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 299\ }\hlstd{\\
+\hllin{\ 300\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{preview\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 301\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 302\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 303\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{168px}\hlstd{}\hlopt{;}\\
+\hllin{\ 304\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 305\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{box{-}shadow\ }\hlnum{0.2s\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 306\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{hover\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 307\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{inset\ }\hlnum{0px\ 0px\ 100px\ 10px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{.}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{3}\hlstd{}\hlopt{);}\\
+\hllin{\ 308\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{box{-}shadow\ }\hlnum{0.2s\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 309\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 310\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\Righttorque\\
+\hllin{\ 311\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 312\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{p\ }\hlopt{\usebox{\hlboxopenbrace}}\Righttorque\\
+\hllin{\ 313\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\Righttorque\\
+\hllin{\ 314\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 315\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin{-}top}\hlopt{:\ }\hlstd{{-}23px}\hlopt{;}\\
+\hllin{\ 316\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 317\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:\ }\hlstd{larger}\hlopt{;}\\
+\hllin{\ 318\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{white}\hlopt{;}\\
+\hllin{\ 319\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 320\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 321\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{control\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 322\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 323\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 324\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{48px}\hlstd{}\hlopt{;}\\
+\hllin{\ 325\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 326\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{ul\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 327\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{list{-}style}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 328\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 329\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{li\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 330\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 331\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 332\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{9px}\hlstd{}\hlopt{;}\\
+\hllin{\ 333\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{30px}\hlstd{}\hlopt{;}\\
+\hllin{\ 334\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 335\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{inline{-}block}\hlopt{;}\\
+\hllin{\ 336\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}position}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ 337\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}size}\hlopt{:\ }\hlstd{cover}\hlopt{;}\\
+\hllin{\ 338\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 339\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{read\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 340\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{read}\hlopt{.}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{png}\hlopt{);}\\
+\hllin{\ 341\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 342\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{download\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 343\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{downl\\
+\hllin{\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{oad}\hlopt{.}\hlstd{png}\hlopt{);}\\
+\hllin{\ 344\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 345\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{share\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 346\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{share\\
+\hllin{\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{png}\hlopt{);}\\
+\hllin{\ 347\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 348\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 349\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 350\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 351\ }\hlstd{\\
+\hllin{\ 352\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{lec\textunderscore card\textunderscore list\ }\hlopt{\usebox{\hlboxopenbrace}}\Righttorque\\
+\hllin{\ 353\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{90}\hlstd{}\hlopt{\%;}\Righttorque\\
+\hllin{\ 354\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{99px}\hlstd{}\hlopt{;}\\
+\hllin{\ 355\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{padding}\hlopt{:\ }\hlstd{}\hlnum{0\ }\hlstd{}\hlopt{!}\hlstd{important}\hlopt{;}\\
+\hllin{\ 356\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border}\hlopt{:\ }\hlstd{}\hlnum{1px\ }\hlstd{}\hlkwb{\$face\textunderscore borders\ }\hlstd{solid}\hlopt{;}\\
+\hllin{\ 357\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@include\ }\hlstd{shadow\textunderscore lvl2}\hlopt{;}\Righttorque\\
+\hllin{\ 358\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ }\hlstd{auto\ }\hlnum{40px}\hlstd{}\hlopt{;}\Righttorque\\
+\hllin{\ 359\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border{-}radius}\hlopt{:\ }\hlstd{}\hlnum{4px}\hlstd{}\hlopt{;}\\
+\hllin{\ 360\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{preview\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 361\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{clearfix}\hlopt{;}\\
+\hllin{\ 362\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 363\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{float}\hlopt{:\ }\hlstd{left}\hlopt{;}\\
+\hllin{\ 364\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{99px}\hlstd{}\hlopt{;}\\
+\hllin{\ 365\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{99px}\hlstd{}\hlopt{;}\\
+\hllin{\ 366\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$preview\textunderscore color}\hlstd{}\hlopt{;}\\
+\hllin{\ 367\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{box{-}shadow\ }\hlnum{0.2s\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 368\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{hover\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 369\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{box{-}shadow}\hlopt{:\ }\hlstd{inset\ }\hlnum{0px\ 0px\ 100px\ 10px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{.}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlnum{3}\hlstd{}\hlopt{);}\\
+\hllin{\ 370\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{transition}\hlopt{:\ }\hlstd{box{-}shadow\ }\hlnum{0.2s\ }\hlstd{ease}\hlopt{;}\\
+\hllin{\ 371\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 372\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 373\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 374\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{p\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 375\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 376\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 377\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{top}\hlopt{:\ }\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 378\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 379\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:\ }\hlstd{larger}\hlopt{;}\\
+\hllin{\ 380\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{black}\hlopt{;}\\
+\hllin{\ 381\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 382\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{after\ }\hlopt{\usebox{\hlboxopenbrace}}\Righttorque\\
+\hllin{\ 383\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:\ }\hlstd{}\hlstr{'\ '}\hlstd{}\hlopt{;}\Righttorque\\
+\hllin{\ 384\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{block}\hlopt{;}\Righttorque\\
+\hllin{\ 385\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{65}\hlstd{}\hlopt{\%;}\Righttorque\\
+\hllin{\ 386\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{3px\ 10}\hlstd{}\hlopt{\%\ }\hlstd{}\hlnum{0\ }\hlstd{auto}\hlopt{;}\\
+\hllin{\ 387\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{1px}\hlstd{}\hlopt{;}\\
+\hllin{\ 388\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{,\ }\hlstd{}\hlnum{0.14}\hlstd{}\hlopt{);}\\
+\hllin{\ 389\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 390\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 391\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{control\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 392\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{clearfix}\hlopt{;}\\
+\hllin{\ 393\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin{-}top}\hlopt{:\ }\hlstd{}\hlnum{12px}\hlstd{}\hlopt{;}\\
+\hllin{\ 394\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 395\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{48px}\hlstd{}\hlopt{;}\\
+\hllin{\ 396\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:\ }\hlstd{}\hlkwb{\$paper\textunderscore bg}\hlstd{}\hlopt{;}\\
+\hllin{\ 397\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{ul\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 398\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{list{-}style}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 399\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwc{@extend\ }\hlstd{}\hlopt{.}\hlstd{nomargin}\hlopt{;}\\
+\hllin{\ 400\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{li\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 401\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{cursor}\hlopt{:\ }\hlstd{pointer}\hlopt{;}\\
+\hllin{\ 402\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{15px\ 25px\ 15px\ 28px}\hlstd{}\hlopt{;}\\
+\hllin{\ 403\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{10}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 404\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{height}\hlopt{:\ }\hlstd{}\hlnum{35px}\hlstd{}\hlopt{;}\\
+\hllin{\ 405\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{inline{-}block}\hlopt{;}\\
+\hllin{\ 406\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}position}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ 407\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}size}\hlopt{:\ }\hlstd{contain}\hlopt{;}\\
+\hllin{\ 408\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}repeat}\hlopt{:\ }\hlstd{no{-}repeat}\hlopt{;}\\
+\hllin{\ 409\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 410\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{read\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 411\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{read}\hlopt{.}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{png}\hlopt{);}\\
+\hllin{\ 412\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{after\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 413\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:\ }\hlstd{}\hlstr{'Read'}\hlstd{}\hlopt{;}\\
+\hllin{\ 414\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{block}\hlopt{;}\\
+\hllin{\ 415\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 416\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{top}\hlopt{:\ }\hlstd{}\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 417\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{90}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 418\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 419\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 420\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{download\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 421\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{downl\\
+\hllin{\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{oad}\hlopt{.}\hlstd{png}\hlopt{);}\\
+\hllin{\ 422\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{after\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 423\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:\ }\hlstd{}\hlstr{'Download'}\hlstd{}\hlopt{;}\\
+\hllin{\ 424\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{block}\hlopt{;}\\
+\hllin{\ 425\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 426\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{top}\hlopt{:\ }\hlstd{}\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 427\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{90}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 428\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 429\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 430\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{share\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 431\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{background{-}image}\hlopt{:\ }\hlstd{}\hlkwd{url}\hlstd{}\hlopt{(..}\\
+\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{/}\hlstd{\textunderscore pics}\hlopt{/}\hlstd{\textunderscore icons}\hlopt{/}\hlstd{share\\
+\hllin{\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{.}\hlstd{png}\hlopt{);}\\
+\hllin{\ 432\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\&:}\hlstd{after\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 433\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:\ }\hlstd{}\hlstr{'Share'}\hlstd{}\hlopt{;}\\
+\hllin{\ 434\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{block}\hlopt{;}\\
+\hllin{\ 435\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{relative}\hlopt{;}\\
+\hllin{\ 436\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{top}\hlopt{:\ }\hlstd{}\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 437\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{90}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 438\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 439\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 440\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 441\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 442\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 443\ }\hlstd{\\
+\hllin{\ 444\ }}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ LECTURE\ STYLE\ BEGIN.\ IT\ IS\ SO\ MANY\ LINES}\\
+\hllin{\ 445\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{lecture\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 446\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{OL\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 447\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{counter{-}reset}\hlopt{:}\hlstd{item}\hlopt{;}\\
+\hllin{\ 448\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 449\ }\hlstd{\\
+\hllin{\ 450\ }}\hlstd{\ \ \ \ }\hlstd{ol\ }\hlopt{\usebox{\hlboxgreaterthan}\ }\hlstd{LI\ }\hlopt{\usebox{\hlboxgreaterthan}\ }\hlstd{p}\hlopt{:}\hlstd{first{-}of{-}type\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 451\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:}\hlstd{inline}\hlopt{;}\\
+\hllin{\ 452\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{padding{-}left}\hlopt{:}\hlstd{}\hlnum{9px}\hlstd{}\hlopt{;}\Righttorque\\
+\hllin{\ 453\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\Righttorque\\
+\hllin{\ 454\ }\hlstd{\\
+\hllin{\ 455\ }}\hlstd{\ \ \ \ }\hlstd{ol\ }\hlopt{\usebox{\hlboxgreaterthan}\ }\hlstd{LI}\hlopt{:}\hlstd{before\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 456\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:}\hlstd{}\hlkwd{counters}\hlstd{}\hlopt{(}\hlstd{item}\hlopt{,}\hlstd{}\hlstr{\dq{}.\dq{}}\hlstd{}\hlopt{)\ }\hlstd{}\hlstr{\dq{}.\ \dq{}}\hlstd{}\hlopt{;}\\
+\hllin{\ 457\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{counter{-}increment}\hlopt{:}\hlstd{item}\hlopt{;}\\
+\hllin{\ 458\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 459\ }\hlstd{\\
+\hllin{\ 460\ }}\hlstd{\ \ \ \ }\hlstd{ol}\hlopt{,}\hlstd{ul\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 461\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}top}\hlopt{:}\hlstd{}\hlnum{3px}\hlstd{}\hlopt{;}\\
+\hllin{\ 462\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{5px}\hlstd{}\hlopt{;}\\
+\hllin{\ 463\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 464\ }\hlstd{\\
+\hllin{\ 465\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{discipline\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 466\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{center}\hlopt{;}\\
+\hllin{\ 467\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}weight}\hlopt{:}\hlstd{bolder}\hlopt{;}\\
+\hllin{\ 468\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{xx{-}large}\hlopt{;}\\
+\hllin{\ 469\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#404040}\hlstd{}\hlopt{;}\\
+\hllin{\ 470\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{35px}\hlstd{}\hlopt{;}\\
+\hllin{\ 471\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 472\ }\hlstd{\\
+\hllin{\ 473\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{teacher\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 474\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{right}\hlopt{;}\\
+\hllin{\ 475\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{16px}\hlstd{}\hlopt{;}\\
+\hllin{\ 476\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#CCC}\hlstd{}\hlopt{;}\\
+\hllin{\ 477\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 478\ }\hlstd{\\
+\hllin{\ 479\ }}\hlstd{\ \ \ \ }\hlstd{p\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 480\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{justify}\hlopt{;}\\
+\hllin{\ 481\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}indent}\hlopt{:}\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 482\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}top}\hlopt{:}\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 483\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{1px}\hlstd{}\hlopt{;}\\
+\hllin{\ 484\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 485\ }\hlstd{\\
+\hllin{\ 486\ }}\hlstd{\ \ \ \ }\hlstd{ul\ }\hlopt{\usebox{\hlboxgreaterthan}\ }\hlstd{li}\hlopt{:}\hlstd{before\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 487\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{content}\hlopt{:}\hlstd{}\hlstr{'}\hlesc{$\backslash$201}\hlstr{4}\hlesc{$\backslash$002}\hlstr{0'}\hlstd{}\hlopt{;}\\
+\hllin{\ 488\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 489\ }\hlstd{\\
+\hllin{\ 490\ }}\hlstd{\ \ \ \ }\hlstd{li\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 491\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{2px}\hlstd{}\hlopt{;}\\
+\hllin{\ 492\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{list{-}style{-}type}\hlopt{:}\hlstd{none}\hlopt{;}\\
+\hllin{\ 493\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 494\ }\hlstd{\\
+\hllin{\ 495\ }}\hlstd{\ \ \ \ }\hlstd{body\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 496\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}family}\hlopt{:}\hlstd{}\hlstr{\dq{}Helvetica\ Neue\dq{}}\hlstd{}\hlopt{,\ }\hlstd{Helvetica}\hlopt{,\ }\hlstd{}\hlstr{\dq{}Hiragino\ }\\
+\hllin{\ \ \ \ \ }\hlstr{}\hlstd{\ \ \ \ \ \ \ \ }\hlstr{Sans\ GB\dq{}}\hlstd{}\hlopt{,\ }\hlstd{Arial}\hlopt{,\ }\hlstd{sans{-}serif}\hlopt{;}\\
+\hllin{\ 497\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{16px}\hlstd{}\hlopt{;}\\
+\hllin{\ 498\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{18px}\hlstd{}\hlopt{;}\\
+\hllin{\ 499\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#737373}\hlstd{}\hlopt{;}\\
+\hllin{\ 500\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{background{-}color}\hlopt{:}\hlstd{}\hlnum{\#fff}\hlstd{}\hlopt{;}\\
+\hllin{\ 501\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid}\hlopt{;}\\
+\hllin{\ 502\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{{-}webkit{-}box{-}shadow}\hlopt{:}\hlstd{}\hlnum{5px\ 10px\ 15px\ 5px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0.4}\hlstd{}\hlopt{);}\\
+\hllin{\ 503\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{{-}moz{-}box{-}shadow}\hlopt{:}\hlstd{}\hlnum{5px\ 10px\ 15px\ 5px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0.4}\hlstd{}\hlopt{);}\\
+\hllin{\ 504\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{box{-}shadow}\hlopt{:}\hlstd{}\hlnum{5px\ 10px\ 15px\ 5px\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0.4}\hlstd{}\hlopt{);}\\
+\hllin{\ 505\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{20px}\hlstd{}\hlopt{;}\\
+\hllin{\ 506\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 507\ }\hlstd{\\
+\hllin{\ 508\ }}\hlstd{\ \ \ \ }\hlstd{table\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 509\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border{-}collapse}\hlopt{:}\hlstd{collapse}\hlopt{;}\\
+\hllin{\ 510\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{15px\ }\hlstd{auto\ }\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 511\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 512\ }\hlstd{\\
+\hllin{\ 513\ }}\hlstd{\ \ \ \ }\hlstd{td}\hlopt{,}\hlstd{th\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 514\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#ddd}\hlstd{}\hlopt{;}\\
+\hllin{\ 515\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{3px\ 10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 516\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 517\ }\hlstd{\\
+\hllin{\ 518\ }}\hlstd{\ \ \ \ }\hlstd{th\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 519\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{5px\ 10px}\hlstd{}\hlopt{;}\Righttorque\\
+\hllin{\ 520\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 521\ }\hlstd{\\
+\hllin{\ 522\ }}\hlstd{\ \ \ \ }\hlstd{a\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 523\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#0069d6}\hlstd{}\hlopt{;}\\
+\hllin{\ 524\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 525\ }\hlstd{\\
+\hllin{\ 526\ }}\hlstd{\ \ \ \ }\hlstd{a}\hlopt{:}\hlstd{hover\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 527\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#0050a3}\hlstd{}\hlopt{;}\\
+\hllin{\ 528\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{text{-}decoration}\hlopt{:}\hlstd{none}\hlopt{;}\\
+\hllin{\ 529\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 530\ }\hlstd{\\
+\hllin{\ 531\ }}\hlstd{\ \ \ \ }\hlstd{a\ img\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 532\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{none}\hlopt{;}\\
+\hllin{\ 533\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 534\ }\hlstd{\\
+\hllin{\ 535\ }}\hlstd{\ \ \ \ }\hlstd{h1}\hlopt{,}\hlstd{h2}\hlopt{,}\hlstd{h3}\hlopt{,}\hlstd{h4}\hlopt{,}\hlstd{h5}\hlopt{,}\hlstd{h6\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 536\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#404040}\hlstd{}\hlopt{;}\\
+\hllin{\ 537\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{36px}\hlstd{}\hlopt{;}\\
+\hllin{\ 538\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 539\ }\hlstd{\\
+\hllin{\ 540\ }}\hlstd{\ \ \ \ }\hlstd{h1\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 541\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 542\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin{-}top}\hlopt{:}\hlstd{}\hlnum{50px}\hlstd{}\hlopt{;}\\
+\hllin{\ 543\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{30px}\hlstd{}\hlopt{;}\\
+\hllin{\ 544\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{center}\hlopt{;}\\
+\hllin{\ 545\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 546\ }\hlstd{\\
+\hllin{\ 547\ }}\hlstd{\ \ \ \ }\hlstd{h2\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 548\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{24px}\hlstd{}\hlopt{;}\\
+\hllin{\ 549\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding{-}left}\hlopt{:}\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 550\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 551\ }\hlstd{\\
+\hllin{\ 552\ }}\hlstd{\ \ \ \ }\hlstd{h3\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 553\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{18px}\hlstd{}\hlopt{;}\\
+\hllin{\ 554\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 555\ }\hlstd{\\
+\hllin{\ 556\ }}\hlstd{\ \ \ \ }\hlstd{h4\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 557\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{16px}\hlstd{}\hlopt{;}\\
+\hllin{\ 558\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 559\ }\hlstd{\\
+\hllin{\ 560\ }}\hlstd{\ \ \ \ }\hlstd{h5\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 561\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{14px}\hlstd{}\hlopt{;}\\
+\hllin{\ 562\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 563\ }\hlstd{\\
+\hllin{\ 564\ }}\hlstd{\ \ \ \ }\hlstd{h6\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 565\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{13px}\hlstd{}\hlopt{;}\\
+\hllin{\ 566\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 567\ }\hlstd{\\
+\hllin{\ 568\ }}\hlstd{\ \ \ \ }\hlstd{h3}\hlopt{,}\hlstd{h4}\hlopt{,}\hlstd{h5}\hlopt{,}\hlstd{h6\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 569\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}weight}\hlopt{:}\hlstd{}\hlnum{400}\hlstd{}\hlopt{;}\\
+\hllin{\ 570\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding{-}left}\hlopt{:}\hlstd{}\hlnum{50px}\hlstd{}\hlopt{;}\\
+\hllin{\ 571\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 572\ }\hlstd{\\
+\hllin{\ 573\ }}\hlstd{\ \ \ \ }\hlstd{hr\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 574\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 575\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border{-}bottom}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#ccc}\hlstd{}\hlopt{;}\\
+\hllin{\ 576\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{0\ 0\ 19px}\hlstd{}\hlopt{;}\\
+\hllin{\ 577\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 578\ }\hlstd{\\
+\hllin{\ 579\ }}\hlstd{\ \ \ \ }\hlstd{blockquote\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 580\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{18px}\hlstd{}\hlopt{;}\\
+\hllin{\ 581\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}family}\hlopt{:}\hlstd{georgia}\hlopt{,}\hlstd{serif}\hlopt{;}\\
+\hllin{\ 582\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}style}\hlopt{:}\hlstd{italic}\hlopt{;}\\
+\hllin{\ 583\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{13px\ 13px\ 21px\ 15px}\hlstd{}\hlopt{;}\\
+\hllin{\ 584\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 585\ }\hlstd{\\
+\hllin{\ 586\ }}\hlstd{\ \ \ \ }\hlstd{blockquote}\hlopt{:}\hlstd{before\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 587\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{content}\hlopt{:}\hlstd{}\hlstr{\dq{}}\hlesc{$\backslash$201}\hlstr{C\dq{}}\hlstd{}\hlopt{;}\\
+\hllin{\ 588\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{40px}\hlstd{}\hlopt{;}\\
+\hllin{\ 589\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin{-}left}\hlopt{:}\hlstd{{-}10px}\hlopt{;}\\
+\hllin{\ 590\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}family}\hlopt{:}\hlstd{georgia}\hlopt{,}\hlstd{serif}\hlopt{;}\\
+\hllin{\ 591\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#eee}\hlstd{}\hlopt{;}\\
+\hllin{\ 592\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 593\ }\hlstd{\\
+\hllin{\ 594\ }}\hlstd{\ \ \ \ }\hlstd{blockquote\ p\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 595\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{14px}\hlstd{}\hlopt{;}\\
+\hllin{\ 596\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}weight}\hlopt{:}\hlstd{}\hlnum{300}\hlstd{}\hlopt{;}\\
+\hllin{\ 597\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{18px}\hlstd{}\hlopt{;}\\
+\hllin{\ 598\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin{-}bottom}\hlopt{:}\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 599\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}style}\hlopt{:}\hlstd{italic}\hlopt{;}\\
+\hllin{\ 600\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 601\ }\hlstd{\\
+\hllin{\ 602\ }}\hlstd{\ \ \ \ }\hlstd{code}\hlopt{,}\hlstd{pre\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 603\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}family}\hlopt{:}\hlstd{Monaco}\hlopt{,\ }\hlstd{Andale\ Mono}\hlopt{,\ }\hlstd{Courier\ New}\hlopt{,\ }\hlstd{monospace}\hlopt{;}\\
+\hllin{\ 604\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 605\ }\hlstd{\\
+\hllin{\ 606\ }}\hlstd{\ \ \ \ }\hlstd{code\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 607\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:}\hlstd{}\hlnum{\#fee9cc}\hlstd{}\hlopt{;}\\
+\hllin{\ 608\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0.75}\hlstd{}\hlopt{);}\\
+\hllin{\ 609\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{12px}\hlstd{}\hlopt{;}\\
+\hllin{\ 610\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{{-}webkit{-}border{-}radius}\hlopt{:}\hlstd{}\hlnum{3px}\hlstd{}\hlopt{;}\\
+\hllin{\ 611\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{{-}moz{-}border{-}radius}\hlopt{:}\hlstd{}\hlnum{3px}\hlstd{}\hlopt{;}\\
+\hllin{\ 612\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border{-}radius}\hlopt{:}\hlstd{}\hlnum{3px}\hlstd{}\hlopt{;}\\
+\hllin{\ 613\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{1px\ 3px}\hlstd{}\hlopt{;}\\
+\hllin{\ 614\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 615\ }\hlstd{\\
+\hllin{\ 616\ }}\hlstd{\ \ \ \ }\hlstd{pre\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 617\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{display}\hlopt{:}\hlstd{block}\hlopt{;}\\
+\hllin{\ 618\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{16px}\hlstd{}\hlopt{;}\\
+\hllin{\ 619\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{11px}\hlstd{}\hlopt{;}\\
+\hllin{\ 620\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#d9d9d9}\hlstd{}\hlopt{;}\\
+\hllin{\ 621\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{white{-}space}\hlopt{:}\hlstd{pre{-}wrap}\hlopt{;}\\
+\hllin{\ 622\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{word{-}wrap}\hlopt{:}\hlstd{break{-}word}\hlopt{;}\\
+\hllin{\ 623\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{0\ 0\ 18px}\hlstd{}\hlopt{;}\\
+\hllin{\ 624\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{14px}\hlstd{}\hlopt{;}\\
+\hllin{\ 625\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 626\ }\hlstd{\\
+\hllin{\ 627\ }}\hlstd{\ \ \ \ }\hlstd{pre\ code\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 628\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{background{-}color}\hlopt{:}\hlstd{}\hlnum{\#fff}\hlstd{}\hlopt{;}\\
+\hllin{\ 629\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#737373}\hlstd{}\hlopt{;}\\
+\hllin{\ 630\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{11px}\hlstd{}\hlopt{;}\\
+\hllin{\ 631\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 632\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 633\ }\hlstd{\\
+\hllin{\ 634\ }}\hlstd{\ \ \ \ }\hlstd{sup\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 635\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}size}\hlopt{:}\hlstd{}\hlnum{.83em}\hlstd{}\hlopt{;}\\
+\hllin{\ 636\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{vertical{-}align}\hlopt{:}\hlstd{super}\hlopt{;}\\
+\hllin{\ 637\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{line{-}height}\hlopt{:}\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 638\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 639\ }\hlstd{\\
+\hllin{\ 640\ }}\hlstd{\ \ \ \ }\hlstd{img\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 641\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{display}\hlopt{:}\hlstd{block}\hlopt{;}\\
+\hllin{\ 642\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#ccc}\hlstd{}\hlopt{;}\\
+\hllin{\ 643\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{10px\ }\hlstd{auto\ }\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 644\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 645\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{max{-}width}\hlopt{:\ }\hlstd{}\hlnum{95}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 646\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 647\ }\hlstd{\\
+\hllin{\ 648\ }}\hlstd{\ \ \ \ }\hlstd{img}\hlopt{,}\\
+\hllin{\ 649\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{table}\hlopt{,}\\
+\hllin{\ 650\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{framed}\hlopt{,}\\
+\hllin{\ 651\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{ovaled\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 652\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{box{-}shadow}\hlopt{:}\hlstd{}\hlnum{0\ 4px\ 8px\ 0\ }\hlstd{}\hlkwd{rgba}\hlstd{}\hlopt{(}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0}\hlstd{}\hlopt{,}\hlstd{}\hlnum{0.5}\hlstd{}\hlopt{);}\\
+\hllin{\ 653\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 654\ }\hlstd{\\
+\hllin{\ 655\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{{*}\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ 656\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{{-}webkit{-}print{-}color{-}adjust}\hlopt{:}\hlstd{exact}\hlopt{;}\\
+\hllin{\ 657\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 658\ }\hlstd{\\
+\hllin{\ 659\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{date\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 660\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#DDD}\hlstd{}\hlopt{;}\\
+\hllin{\ 661\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{right}\hlopt{;}\\
+\hllin{\ 662\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border{-}bottom}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#DDD}\hlstd{}\hlopt{;}\\
+\hllin{\ 663\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:}\hlstd{}\hlnum{94}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 664\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{20px\ }\hlstd{auto\ }\hlnum{7px}\hlstd{}\hlopt{;}\\
+\hllin{\ 665\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 666\ }\hlstd{\\
+\hllin{\ 667\ }}\hlstd{\ \ \ \ }\hlstd{dl\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 668\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding{-}left}\hlopt{:}\hlstd{}\hlnum{25px}\hlstd{}\hlopt{;}\\
+\hllin{\ 669\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{text{-}align}\hlopt{:}\hlstd{justify}\hlopt{;}\\
+\hllin{\ 670\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 671\ }\hlstd{\\
+\hllin{\ 672\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{framed\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 673\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#AAA}\hlstd{}\hlopt{;}\\
+\hllin{\ 674\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:}\hlstd{}\hlnum{85}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 675\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{30px}\hlstd{}\hlopt{;}\\
+\hllin{\ 676\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{15px}\hlstd{}\hlopt{;}\\
+\hllin{\ 677\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 678\ }\hlstd{\\
+\hllin{\ 679\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{ovaled\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 680\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border}\hlopt{:}\hlstd{}\hlnum{1px\ }\hlstd{solid\ }\hlnum{\#AAA}\hlstd{}\hlopt{;}\\
+\hllin{\ 681\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:}\hlstd{}\hlnum{85}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 682\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{border{-}radius}\hlopt{:}\hlstd{}\hlnum{50}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 683\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{margin}\hlopt{:}\hlstd{}\hlnum{30px}\hlstd{}\hlopt{;}\\
+\hllin{\ 684\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{padding}\hlopt{:}\hlstd{}\hlnum{15px}\hlstd{}\hlopt{;}\\
+\hllin{\ 685\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 686\ }\hlstd{\\
+\hllin{\ 687\ }}\hlstd{\ \ \ \ }\hlstd{}\hlopt{.}\hlstd{irony\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 688\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{font{-}style}\hlopt{:}\hlstd{italic}\hlopt{;}\\
+\hllin{\ 689\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{color}\hlopt{:}\hlstd{}\hlnum{\#c00000}\hlstd{}\hlopt{;}\\
+\hllin{\ 690\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 691\ }\hlstd{\\
+\hllin{\ 692\ }}\hlstd{\ \ \ \ }\hlstd{table}\hlopt{,}\hlstd{pre\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 693\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{page{-}break{-}inside}\hlopt{:}\hlstd{avoid}\hlopt{;}\\
+\hllin{\ 694\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 695\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 696\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlslc{//\ LECTURE\ STYLE\ IS\ ENDING\ HERE}\\
+\hllin{\ 697\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 698\ }\hlstd{}\\
+\hllin{\ 699\ }\hlopt{.}\hlstd{footer\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 700\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{position}\hlopt{:\ }\hlstd{fixed}\hlopt{;}\\
+\hllin{\ 701\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{bottom}\hlopt{:\ }\hlstd{}\hlnum{10px}\hlstd{}\hlopt{;}\\
+\hllin{\ 702\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{left}\hlopt{:\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;}\\
+\hllin{\ 703\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{width}\hlopt{:\ }\hlstd{}\hlnum{100}\hlstd{}\hlopt{\%;}\\
+\hllin{\ 704\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{text{-}align}\hlopt{:\ }\hlstd{center}\hlopt{;}\\
+\hllin{\ 705\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{p\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 706\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlnum{\#696969}\hlstd{}\hlopt{;}\\
+\hllin{\ 707\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{margin}\hlopt{:\ }\hlstd{}\hlnum{0\ 1px}\hlstd{}\hlopt{;}\\
+\hllin{\ 708\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 709\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{a\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 710\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{color}\hlopt{:\ }\hlstd{}\hlnum{\#696969}\hlstd{}\hlopt{;}\\
+\hllin{\ 711\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{text{-}decoration}\hlopt{:\ }\hlstd{underline}\hlopt{;}\\
+\hllin{\ 712\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 713\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwc{@media\ }\hlstd{print\ }\hlopt{\usebox{\hlboxopenbrace}}\\
+\hllin{\ 714\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{display}\hlopt{:\ }\hlstd{none}\hlopt{;}\\
+\hllin{\ 715\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ 716\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\hlstd{}\\
+\mbox{}
+\normalfont
+\normalsize

@@ -1,8 +1,6 @@
-
 from flask import render_template
 from flask import send_file
 from app import app
-# import disciplines
 
 class Discipline:
     def __init__(self, code, name, pdf):

@@ -1,0 +1,979 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.28)  10 JUN 2015 11:57
+entering extended mode
+**card.html.tex
+("D:\edu\web-programming\Lecture Keeper\report\codes\card.html.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \noindent
+             
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.3 \hlstd
+          {\hllin{\ \ \ 1\ }\usebox{\hlboxopenbrace}\%\ block\ card\ \%\useb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 \hlstd{\hllin
+                 {\ \ \ 1\ }\usebox{\hlboxopenbrace}\%\ block\ card\ \%\useb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.3 ...d{\hllin{\ \ \ 1\ }\usebox{\hlboxopenbrace}
+                                                  \%\ block\ card\ \%\usebox...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.3 ...d{\hllin{\ \ \ 1\ }\usebox{\hlboxopenbrace}
+                                                  \%\ block\ card\ \%\usebox...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.3 ...%\ block\ card\ \%\usebox{\hlboxclosebrace}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.3 ...%\ block\ card\ \%\usebox{\hlboxclosebrace}
+                                                  \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.4 \hllin
+          {\ \ \ 2\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 \hllin{\ \ \ 2\ }}\hlstd
+                            {\ \ \ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 \hllin{\ \ \ 2\ }}\hlstd{\ \ \ \ }\hlstd
+                                            {}\hlkwa{\usebox{\hlboxlessthan}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...n{\ \ \ 2\ }}\hlstd{\ \ \ \ }\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxlessthan}di...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxlessthan 
+                          
+l.4 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  div\ }\hlstd{}\hlkwb{class...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.4 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  div\ }\hlstd{}\hlkwb{class...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.4 ...}\hlkwa{\usebox{\hlboxlessthan}div\ }\hlstd
+                                                  {}\hlkwb{class}\hlstd{=}\h...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...\usebox{\hlboxlessthan}div\ }\hlstd{}\hlkwb
+                                                  {class}\hlstd{=}\hlstr{\dq...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...xlessthan}div\ }\hlstd{}\hlkwb{class}\hlstd
+                                                  {=}\hlstr{\dq{}lec\textund...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...}div\ }\hlstd{}\hlkwb{class}\hlstd{=}\hlstr
+                                                  {\dq{}lec\textunderscore c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...\ }\hlstd{}\hlkwb{class}\hlstd{=}\hlstr{\dq
+                                                  {}lec\textunderscore card\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...\textunderscore card\textunderscore grid\dq
+                                                  {}}\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...rscore card\textunderscore grid\dq{}}\hlstd
+                                                  {}\hlkwa{\usebox{\hlboxgre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...ard\textunderscore grid\dq{}}\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxgreaterthan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxgreaterthan 
+                             
+l.4 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  }\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.4 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  }\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.5 \hllin
+          {\ \ \ 3\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 \hllin{\ \ \ 3\ }\hlstd
+                           {}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 \hllin{\ \ \ 3\ }\hlstd{}\hlstd
+                                   {\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ... 3\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd
+                                                  {}\hlkwa{\usebox{\hlboxles...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...std{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxlessthan}di...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxlessthan 
+                          
+l.5 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  div\ }\hlstd{}\hlkwb{class...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  div\ }\hlstd{}\hlkwb{class...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.5 ...}\hlkwa{\usebox{\hlboxlessthan}div\ }\hlstd
+                                                  {}\hlkwb{class}\hlstd{=}\h...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...\usebox{\hlboxlessthan}div\ }\hlstd{}\hlkwb
+                                                  {class}\hlstd{=}\hlstr{\dq...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...xlessthan}div\ }\hlstd{}\hlkwb{class}\hlstd
+                                                  {=}\hlstr{\dq{}preview\dq{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...}div\ }\hlstd{}\hlkwb{class}\hlstd{=}\hlstr
+                                                  {\dq{}preview\dq{}}\hlstd{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...\ }\hlstd{}\hlkwb{class}\hlstd{=}\hlstr{\dq
+                                                  {}preview\dq{}}\hlstd{\ }\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...hlkwb{class}\hlstd{=}\hlstr{\dq{}preview\dq
+                                                  {}}\hlstd{\ }\hlkwb{onclic...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...ss}\hlstd{=}\hlstr{\dq{}preview\dq{}}\hlstd
+                                                  {\ }\hlkwb{onclick}\hlstd{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...=}\hlstr{\dq{}preview\dq{}}\hlstd{\ }\hlkwb
+                                                  {onclick}\hlstd{=}\hlstr{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...review\dq{}}\hlstd{\ }\hlkwb{onclick}\hlstd
+                                                  {=}\hlstr{\dq{}location.hr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...{}}\hlstd{\ }\hlkwb{onclick}\hlstd{=}\hlstr
+                                                  {\dq{}location.href='\useb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 ...hlstd{\ }\hlkwb{onclick}\hlstd{=}\hlstr{\dq
+                                                  {}location.href='\usebox{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.5 ...dq{}location.href='\usebox{\hlboxopenbrace}
+                                                  \usebox{\hlboxopenbrace}\ }\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5 ...dq{}location.href='\usebox{\hlboxopenbrace}
+                                                  \usebox{\hlboxopenbrace}\ }\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.5 ...ox{\hlboxopenbrace}\usebox{\hlboxopenbrace}
+                                                  \ }\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5 ...ox{\hlboxopenbrace}\usebox{\hlboxopenbrace}
+                                                  \ }\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.6 \hllin
+          {\ \ \ \ \ }\hlstr{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 \hllin{\ \ \ \ \ }\hlstr
+                            {}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 \hllin{\ \ \ \ \ }\hlstr{}\hlstd
+                                    {\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 ...\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstr
+                                                  {discipline.code\ \usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.6 ...{discipline.code\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}'...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.6 ...{discipline.code\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}'...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.6 ...{\hlboxclosebrace}\usebox{\hlboxclosebrace}
+                                                  '\ \dq{}}\hlstd{}\hlkwa{\u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.6 ...{\hlboxclosebrace}\usebox{\hlboxclosebrace}
+                                                  '\ \dq{}}\hlstd{}\hlkwa{\u...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.6 ...xclosebrace}\usebox{\hlboxclosebrace}'\ \dq
+                                                  {}}\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 ...ce}\usebox{\hlboxclosebrace}'\ \dq{}}\hlstd
+                                                  {}\hlkwa{\usebox{\hlboxgre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 ...ox{\hlboxclosebrace}'\ \dq{}}\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxgreaterthan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxgreaterthan 
+                             
+l.6 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  \usebox{\hlboxlessthan}/di...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.6 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  \usebox{\hlboxlessthan}/di...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxlessthan 
+                          
+l.6 ...x{\hlboxgreaterthan}\usebox{\hlboxlessthan}
+                                                  /div\usebox{\hlboxgreatert...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.6 ...x{\hlboxgreaterthan}\usebox{\hlboxlessthan}
+                                                  /div\usebox{\hlboxgreatert...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxgreaterthan 
+                             
+l.6 ...lboxlessthan}/div\usebox{\hlboxgreaterthan}
+                                                  }\Righttorque\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.6 ...lboxlessthan}/div\usebox{\hlboxgreaterthan}
+                                                  }\Righttorque\\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.6 .../div\usebox{\hlboxgreaterthan}}\Righttorque
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.7 \hllin
+          {\ \ \ 4\ }\hlstd{\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7 \hllin{\ \ \ 4\ }\hlstd
+                           {\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.8 \hllin
+          {\ \ \ 5\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa{\usebox{\hlboxl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 \hllin{\ \ \ 5\ }}\hlstd
+                            {\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa{\usebox{\hlboxl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...n{\ \ \ 5\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd
+                                                  {}\hlkwa{\usebox{\hlboxles...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...5\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxlessthan}p\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxlessthan 
+                          
+l.8 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  p\ }\hlstd{}\hlkwb{onclick...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...\ \ }\hlstd{}\hlkwa{\usebox{\hlboxlessthan}
+                                                  p\ }\hlstd{}\hlkwb{onclick...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.8 ...d{}\hlkwa{\usebox{\hlboxlessthan}p\ }\hlstd
+                                                  {}\hlkwb{onclick}\hlstd{=}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...a{\usebox{\hlboxlessthan}p\ }\hlstd{}\hlkwb
+                                                  {onclick}\hlstd{=}\hlstr{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...xlessthan}p\ }\hlstd{}\hlkwb{onclick}\hlstd
+                                                  {=}\hlstr{\dq{}location.hr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...}p\ }\hlstd{}\hlkwb{onclick}\hlstd{=}\hlstr
+                                                  {\dq{}location.href='\useb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...}\hlstd{}\hlkwb{onclick}\hlstd{=}\hlstr{\dq
+                                                  {}location.href='\usebox{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.8 ...dq{}location.href='\usebox{\hlboxopenbrace}
+                                                  \usebox{\hlboxopenbrace}\ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...dq{}location.href='\usebox{\hlboxopenbrace}
+                                                  \usebox{\hlboxopenbrace}\ ...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.8 ...ox{\hlboxopenbrace}\usebox{\hlboxopenbrace}
+                                                  \ discipline.code\ \usebox...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...ox{\hlboxopenbrace}\usebox{\hlboxopenbrace}
+                                                  \ discipline.code\ \usebox...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.8 ... discipline.code\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}'...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ... discipline.code\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}'...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.8 ...{\hlboxclosebrace}\usebox{\hlboxclosebrace}
+                                                  '\ \dq{}}\hlstd{}\hlkwa{\u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...{\hlboxclosebrace}\usebox{\hlboxclosebrace}
+                                                  '\ \dq{}}\hlstd{}\hlkwa{\u...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.8 ...xclosebrace}\usebox{\hlboxclosebrace}'\ \dq
+                                                  {}}\hlstd{}\hlkwa{\usebox{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...ce}\usebox{\hlboxclosebrace}'\ \dq{}}\hlstd
+                                                  {}\hlkwa{\usebox{\hlboxgre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 ...ox{\hlboxclosebrace}'\ \dq{}}\hlstd{}\hlkwa
+                                                  {\usebox{\hlboxgreaterthan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxgreaterthan 
+                             
+l.8 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  }\hlstd{\usebox{\hlboxopen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...}}\hlstd{}\hlkwa{\usebox{\hlboxgreaterthan}
+                                                  }\hlstd{\usebox{\hlboxopen...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+l.8 ...d{}\hlkwa{\usebox{\hlboxgreaterthan}}\hlstd
+                                                  {\usebox{\hlboxopenbrace}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.8 ...reaterthan}}\hlstd{\usebox{\hlboxopenbrace}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.8 ...reaterthan}}\hlstd{\usebox{\hlboxopenbrace}
+                                                  \\
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<recently read> \hllin 
+                       
+l.9 \hllin
+          {\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 \hllin{\ \ \ \ \ }}\hlstd
+                             {\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd
+                                                  {\usebox{\hlboxopenbrace}\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \hlboxopenbrace 
+                           
+l.9 ... \ \ \ \ \ }\hlstd{\usebox{\hlboxopenbrace}
+                                                  \ discipline.name\ \usebox...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.9 ... \ \ \ \ \ }\hlstd{\usebox{\hlboxopenbrace}
+                                                  \ discipline.name\ \usebox...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.9 ... discipline.name\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.9 ... discipline.name\ \usebox{\hlboxclosebrace}
+                                                  \usebox{\hlboxclosebrace}}...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \hlboxclosebrace 
+                            
+l.9 ...{\hlboxclosebrace}\usebox{\hlboxclosebrace}
+                                                  }\hlkwa{\usebox{\hlboxless...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 16 strings out of 493921
+ 356 string characters out of 3144863
+ 49031 words of memory out of 3000000
+ 3408 multiletter control sequences out of 15000+200000
+ 3808 words of font info for 15 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 12i,1n,9p,361b,38s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
