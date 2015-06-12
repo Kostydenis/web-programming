@@ -1,0 +1,6 @@
+PWD /Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/report
+INPUT /usr/local/texlive/2014/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/report/screens.tex
+OUTPUT /Users/kostydenis/Documents/edu_local/web programming/Lecture Keeper/report/screens.log
