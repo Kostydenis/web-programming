@@ -3,50 +3,50 @@
 \hlstd{}\hllin{\ \ \ 1\ }\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{,\ }\hlstd{what}\hlopt{,\ }\hlstd{toWhat}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
 \hllin{\ \ \ 2\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{);}\\
 \hllin{\ \ \ 3\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(}\hlstd{}\hlkwa{var\ }\hlstd{i\ }\hlopt{=\ }\hlstd{tmp}\hlopt{.}\hlstd{length\ }\hlopt{{-}\ }\hlstd{}\hlnum{1}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxgreaterthan}=\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;\ }\hlstd{i}\hlopt{{-}{-})\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ \ 4\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{i}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{className}\hlopt{.}\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwd{replace}\hlstd{}\hlopt{(}\hlstd{what}\hlopt{,\ }\hlstd{toWhat}\hlopt{))}\Righttorque\\
-\hllin{\ \ \ 5\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
-\hllin{\ \ \ 6\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
-\hllin{\ \ \ 7\ }\hlstd{}\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{,\ }\hlstd{what}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ \ 8\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{);}\\
-\hllin{\ \ \ 9\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(}\hlstd{}\hlkwa{var\ }\hlstd{i\ }\hlopt{=\ }\hlstd{tmp}\hlopt{.}\hlstd{length\ }\hlopt{{-}\ }\hlstd{}\hlnum{1}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxgreaterthan}=\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;\ }\hlstd{i}\hlopt{{-}{-})\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ 10\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{i}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'onclick'}\hlstd{}\hlopt{,\ }\hlstd{what}\hlopt{)}\\
-\hllin{\ \ 11\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
-\hllin{\ \ 12\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
-\hllin{\ \ 13\ }\hlstd{}\\
-\hllin{\ \ 14\ }\hlkwa{function\ }\hlstd{}\hlkwd{show\textunderscore menu}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ 15\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'darken'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 16\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 17\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu\textunderscore btn'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide\textunderscore menu()'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 18\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
-\hllin{\ \ 19\ }\hlstd{}\\
-\hllin{\ \ 20\ }\hlkwa{function\ }\hlstd{}\hlkwd{hide\textunderscore menu}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ 21\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'darken'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 22\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 23\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu\textunderscore btn'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show\textunderscore menu()'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 24\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
-\hllin{\ \ 25\ }\hlstd{}\\
-\hllin{\ \ 26\ }\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore to\textunderscore list}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ 27\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'lec\textunderscore card\textunderscore grid'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 28\ }\hlstd{\\
-\hllin{\ \ 29\ }}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'list\ not\textunderscore pressed'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{;}\\
-\hllin{\ \ 30\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\Righttorque\\
-\hllin{\ \ 31\ }\hlstd{\\
-\hllin{\ \ 32\ }\ tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 33\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid\ not\textunderscore pressed'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 34\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
-\hllin{\ \ 35\ }\hlstd{}\\
-\hllin{\ \ 36\ }\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore to\textunderscore grid}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
-\hllin{\ \ 37\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'lec\textunderscore card\textunderscore list'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 38\ }\hlstd{\\
-\hllin{\ \ 39\ }}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'grid\ not\textunderscore pressed'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{;}\\
-\hllin{\ \ 40\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 41\ }\hlstd{\Righttorque\\
-\hllin{\ \ 42\ }\ tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 43\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list\ not\textunderscore pressed'}\hlstd{}\hlopt{);}\\
-\hllin{\ \ 44\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\hlstd{}\\
+\hllin{\ \ \ 4\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{i}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{className}\hlopt{.}\Righttorque\\
+\hllin{\ \ \ 5\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlkwd{replace}\hlstd{}\hlopt{(}\hlstd{what}\hlopt{,\ }\hlstd{toWhat}\hlopt{))}\\
+\hllin{\ \ \ 6\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
+\hllin{\ \ \ 7\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ \ 8\ }\hlstd{}\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{,\ }\hlstd{what}\hlopt{)\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ \ 9\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{clss}\hlopt{);}\\
+\hllin{\ \ 10\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{for\ }\hlstd{}\hlopt{(}\hlstd{}\hlkwa{var\ }\hlstd{i\ }\hlopt{=\ }\hlstd{tmp}\hlopt{.}\hlstd{length\ }\hlopt{{-}\ }\hlstd{}\hlnum{1}\hlstd{}\hlopt{;\ }\hlstd{i\ }\hlopt{\usebox{\hlboxgreaterthan}=\ }\hlstd{}\hlnum{0}\hlstd{}\hlopt{;\ }\hlstd{i}\hlopt{{-}{-})\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 11\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{i}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'onclick'}\hlstd{}\hlopt{,\ }\hlstd{what}\hlopt{)}\\
+\hllin{\ \ 12\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
+\hllin{\ \ 13\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 14\ }\hlstd{}\\
+\hllin{\ \ 15\ }\hlkwa{function\ }\hlstd{}\hlkwd{show\textunderscore menu}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 16\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'darken'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 17\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 18\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu\textunderscore btn'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide\textunderscore menu()'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 19\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
+\hllin{\ \ 20\ }\hlstd{}\\
+\hllin{\ \ 21\ }\hlkwa{function\ }\hlstd{}\hlkwd{hide\textunderscore menu}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 22\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'darken'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 23\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'hide'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 24\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore onclck}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'menu\textunderscore btn'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'show\textunderscore menu()'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 25\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace};}\\
+\hllin{\ \ 26\ }\hlstd{}\\
+\hllin{\ \ 27\ }\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore to\textunderscore list}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 28\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'lec\textunderscore card\textunderscore grid'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 29\ }\hlstd{\\
+\hllin{\ \ 30\ }}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'list\ not\textunderscore pressed'}\hlstd{}\hlopt{)}\Righttorque\\
+\hllin{\ \ 31\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{;}\\
+\hllin{\ \ 32\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 33\ }\hlstd{\\
+\hllin{\ \ 34\ }\ tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 35\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid\ not\textunderscore pressed'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 36\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\\
+\hllin{\ \ 37\ }\hlstd{}\\
+\hllin{\ \ 38\ }\hlkwa{function\ }\hlstd{}\hlkwd{switch\textunderscore to\textunderscore grid}\hlstd{}\hlopt{()\ \usebox{\hlboxopenbrace}}\\
+\hllin{\ \ 39\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwd{switch\textunderscore clss}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'lec\textunderscore card\textunderscore list'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 40\ }\hlstd{\\
+\hllin{\ \ 41\ }}\hlstd{\ \ \ \ }\hlstd{tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'grid\ not\textunderscore pressed'}\hlstd{}\hlopt{)}\Righttorque\\
+\hllin{\ \ 42\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{;}\\
+\hllin{\ \ 43\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'grid'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 44\ }\hlstd{\\
+\hllin{\ \ 45\ }\ tmp\ }\hlopt{=\ }\hlstd{document}\hlopt{.}\hlstd{}\hlkwd{getElementsByClassName}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'list'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 46\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{tmp}\hlopt{{[}}\hlstd{}\hlnum{0}\hlstd{}\hlopt{{]}.}\hlstd{}\hlkwd{setAttribute}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'class'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'list\ not\textunderscore pressed'}\hlstd{}\hlopt{);}\\
+\hllin{\ \ 47\ }\hlstd{}\hlopt{\usebox{\hlboxclosebrace}}\hlstd{}\\
 \mbox{}
 \normalfont
 \normalsize

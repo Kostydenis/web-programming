@@ -10,53 +10,53 @@
 \hllin{\ \ \ 8\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{self}\hlopt{.}\hlstd{name\ }\hlopt{=\ }\hlstd{name\\
 \hllin{\ \ \ 9\ }}\hlstd{\ \ \ \ \ \ \ \ }\hlstd{self}\hlopt{.}\hlstd{pdf\ }\hlopt{=\ }\hlstd{pdf\\
 \hllin{\ \ 10\ }\\
-\hllin{\ \ 11\ }web\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'web'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Веб{-}}\\
-\hllin{\ \ \ \ \ }\hlstr{}\hlstd{\ \ \ \ \ \ }\hlstr{программирование'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'webPDF'}\hlstd{}\hlopt{)}\Righttorque\\
-\hllin{\ \ 12\ }\hlstd{ics\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'ics'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Проектирование\ }\Righttorque\\
-\hllin{\ \ \ \ \ }\hlstr{}\hlstd{\ \ \ \ \ \ }\hlstr{АСОИУ'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'icsPDF'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 13\ }\hlstd{electr\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'electr'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Схемотехника'}\hlstd{}\hlopt{,\ }\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ }\hlstd{}\hlstr{'electrPDF'}\hlstd{}\hlopt{)}\Righttorque\\
-\hllin{\ \ 14\ }\hlstd{\\
-\hllin{\ \ 15\ }discipline\textunderscore list\ }\hlopt{=\ {[}}\hlstd{web}\hlopt{,\ }\hlstd{ics}\hlopt{,\ }\hlstd{electr}\hlopt{{]}}\Righttorque\\
-\hllin{\ \ 16\ }\hlstd{}\\
-\hllin{\ \ 17\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 18\ }\hlstd{}\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/index'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 19\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{index}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 20\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
-\hllin{\ \ 21\ }\hlstd{}\\
-\hllin{\ \ 22\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/about'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 23\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{about}\hlstd{}\hlopt{():}\Righttorque\\
-\hllin{\ \ 24\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'about.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\Righttorque\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
+\hllin{\ \ 11\ }web\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'web'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Веб{-}}\Righttorque\\
+\hllin{\ \ 12\ }\hlstr{}\hlstd{\ \ \ \ \ \ }\hlstr{программирование'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'webPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 13\ }\hlstd{ics\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'ics'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Проектирование\ }\Righttorque\\
+\hllin{\ \ 14\ }\hlstr{}\hlstd{\ \ \ \ \ \ }\hlstr{АСОИУ'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'icsPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 15\ }\hlstd{electr\ }\hlopt{=\ }\hlstd{}\hlkwd{Discipline}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'electr'}\hlstd{}\hlopt{,\ }\hlstd{}\hlstr{'Схемотехника'}\hlstd{}\hlopt{,\ }\Righttorque\\
+\hllin{\ \ 16\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ }\hlstd{}\hlstr{'electrPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 17\ }\hlstd{\\
+\hllin{\ \ 18\ }discipline\textunderscore list\ }\hlopt{=\ {[}}\hlstd{web}\hlopt{,\ }\hlstd{ics}\hlopt{,\ }\hlstd{electr}\hlopt{{]}}\\
+\hllin{\ \ 19\ }\hlstd{}\\
+\hllin{\ \ 20\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 21\ }\hlstd{}\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/index'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 22\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{index}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 23\ }\hlstd{}\hlstd{\ \ \ \ }\hlstd{}\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\Righttorque\\
+\hllin{\ \ 24\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
 \hllin{\ \ 25\ }\hlstd{}\\
-\hllin{\ \ 26\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/web'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 27\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{web}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 28\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/web/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\Righttorque\\
-\hllin{\ \ 29\ }\hlstd{}\\
-\hllin{\ \ 30\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/webPDF'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 31\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{webPDF}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 32\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/web.pdf'}\hlstd{}\hlopt{,\ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 33\ }\hlstd{}\Righttorque\\
-\hllin{\ \ 34\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/ics'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 35\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{ics}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 36\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/ics/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
-\hllin{\ \ 37\ }\hlstd{}\\
-\hllin{\ \ 38\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/icsPDF'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 39\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{icsPDF}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 40\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/ics.pdf'}\hlstd{}\hlopt{,\ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 41\ }\hlstd{}\\
-\hllin{\ \ 42\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/electr'}\hlstd{}\hlopt{)}\Righttorque\\
-\hllin{\ \ 43\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{electr}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 44\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'electr/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ \\
-\hllin{\ \ \ \ \ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{=\ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
-\hllin{\ \ 45\ }\hlstd{}\\
-\hllin{\ \ 46\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/electrPDF'}\hlstd{}\hlopt{)}\\
-\hllin{\ \ 47\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{electrPDF}\hlstd{}\hlopt{():}\\
-\hllin{\ \ 48\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/electr.pdf'}\hlstd{}\hlopt{,\ }\\
-\hllin{\ \ \ \ \ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\hlstd{}\\
+\hllin{\ \ 26\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/about'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 27\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{about}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 28\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'about.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\Righttorque\\
+\hllin{\ \ 29\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
+\hllin{\ \ 30\ }\hlstd{}\\
+\hllin{\ \ 31\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/web'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 32\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{web}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 33\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/web/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\Righttorque\\
+\hllin{\ \ 34\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
+\hllin{\ \ 35\ }\hlstd{}\\
+\hllin{\ \ 36\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/webPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 37\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{webPDF}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 38\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/web.pdf'}\hlstd{}\hlopt{,\ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 39\ }\hlstd{}\\
+\hllin{\ \ 40\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/ics'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 41\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{ics}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 42\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/ics/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ }\hlopt{=\ }\Righttorque\\
+\hllin{\ \ 43\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
+\hllin{\ \ 44\ }\hlstd{}\\
+\hllin{\ \ 45\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/icsPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 46\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{icsPDF}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 47\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/ics.pdf'}\hlstd{}\hlopt{,\ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 48\ }\hlstd{}\\
+\hllin{\ \ 49\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/electr'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 50\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{electr}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 51\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{render\textunderscore template}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'electr/index.html'}\hlstd{}\hlopt{,\ }\hlstd{discipline\textunderscore list\ \Righttorque\\
+\hllin{\ \ 52\ }}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{}\hlopt{=\ }\hlstd{discipline\textunderscore list}\hlopt{)}\\
+\hllin{\ \ 53\ }\hlstd{}\\
+\hllin{\ \ 54\ }\hlkwb{@app}\hlstd{}\hlopt{.}\hlstd{}\hlkwd{route}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'/electrPDF'}\hlstd{}\hlopt{)}\\
+\hllin{\ \ 55\ }\hlstd{}\hlkwa{def\ }\hlstd{}\hlkwd{electrPDF}\hlstd{}\hlopt{():}\\
+\hllin{\ \ 56\ }\hlstd{\ }\hlkwa{return\ }\hlstd{}\hlkwd{send\textunderscore file}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'static/pdfs/electr.pdf'}\hlstd{}\hlopt{,\ }\Righttorque\\
+\hllin{\ \ 57\ }\hlstd{}\hlstd{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\hlstd{as\textunderscore attachment}\hlopt{=}\hlstd{}\hlkwa{True}\hlstd{}\hlopt{)}\hlstd{}\\
 \mbox{}
 \normalfont
 \normalsize

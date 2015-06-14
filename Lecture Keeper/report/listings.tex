@@ -1,38 +1,22 @@
-\captionsetup[figure]{labelformat=mylisting}
+\section{Листинги приложения}
 
-\chapter{Листинги приложения}
+Все исходные коды приложения можно разделить на две группы: отвечающие за логику работы приложения и за его внешний вид.
 
-Все исходные коды приложения можно разделить на серверную и клиентскую части. В серверную часть входят файлы, запускаемые на сервере и учавствующие в процессе разработки, а в клиентскую - то, что отображается пользователю - шаблоны и стили.
+\lstcode{codes/__init__.py}{1}{\normalsize}{Инициализация приложения}
+\lstcode{codes/views.py}{1}{\normalsize}{Управление страницами приложения}
+\lstcode{codes/run.py}{1}{\normalsize}{Запуск приложения}
 
-\input{codes/__init__.py}
-\begin{figure}[h!]
-	\caption{\_\_init\_\_.py}
-\end{figure}
+\section{Вид приложения}
+\subsection{Шаблоны}
 
-\input{codes/views.py}
-\begin{figure}[h!]
-	\caption{views.py}
-\end{figure}
+Внешний вид приложения определяется файлами шаблонов и стилей.
 
-	\input{codes/run.py}
-\begin{figure}[h!]
-	\caption{run.py}
-\end{figure}
+\lstcode{codes/base.html}{1}{\normalsize}{Общий шаблон для всех страниц приложения}
+\lstcode{codes/index.html}{1}{\normalsize}{Шаблон главной страницы приложения}
+\lstcode{codes/card.html}{1}{\normalsize}{Шаблон карточек дисциплин}
 
-\section{Шаблоны}
+\subsection{Стили}
 
-%\input{codes/base.html}
-%\begin{figure}[h!]
-%	\caption{base.html}
-%\end{figure}
+При создании стилей веб-приложения использовался препроцессор языка CSS - SASS. Листинг которого представлен ниже. css-файл генерируется программно, на сервере и браузер пользователя используется готовый css-файл (листинг не приведен по причине большого объема).
 
-%\input{codes/index.html}
-%\begin{figure}[h!]
-%	\includegraphics[height=0.1cm]{}
-%	\caption{index.html}
-%\end{figure}
-
-%\input{codes/card.html}
-%\begin{figure}[h!]
-%	\caption{card.html}
-%\end{figure}
+\lstcode{codes/main.scss}{0.3}{\footnotesize}{main.scss}
