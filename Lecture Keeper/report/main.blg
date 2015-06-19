@@ -21,7 +21,7 @@ Warning--entry type for "stackoverflow" isn't style-file defined
 --line 82 of file bks.bib
 You've used 10 entries,
             2958 wiz_defined-function locations,
-            703 strings with 6534 characters,
+            703 strings with 6104 characters,
 and the built_in function-call counts, 1371 in all, are:
 = -- 172
 > -- 19
